@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hicv-cn.github.io/hicv-word-resume-templates/sitemap.xml
