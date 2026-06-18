@@ -1,8 +1,8 @@
-# HICV Word Resume Template Index
+# HICV 简历模板索引
 
-This catalog lists 2132 editable Word resume templates from [HICV.cn](https://hicv.cn). Use it to find Chinese resume templates, English CV templates, graduate interview resume templates, industry-specific resumes, cover letters, and DOCX resume templates.
+这里收录了 2132 套来自 [HICV.cn](https://hicv.cn) 的可编辑 Word 简历模板，包含中文简历模板、个人简历模板、求职简历模板、行业专属简历、研究生复试简历、自荐信模板和英文简历模板。
 
-> 所有文件均为可编辑 Word 格式，适合 Microsoft Word、WPS Office 和兼容 DOCX 的编辑器。
+> 所有文件均为 DOCX 格式，适合 Microsoft Word、WPS Office 和兼容 DOCX 的编辑器。更多 AI 简历生成、简历范文、面经和校招信息可访问 [hicv.cn](https://hicv.cn)。
 
 ## 01_表格简历
 
@@ -10,7 +10,7 @@ This catalog lists 2132 editable Word resume templates from [HICV.cn](https://hi
 
 模板数量：118
 
-| Template | File |
+| 模板名称 | 下载文件 |
 | --- | --- |
 | 标准表格单页02 | [templates/01_表格简历/单页/标准表格单页02.docx](./templates/01_%E8%A1%A8%E6%A0%BC%E7%AE%80%E5%8E%86/%E5%8D%95%E9%A1%B5/%E6%A0%87%E5%87%86%E8%A1%A8%E6%A0%BC%E5%8D%95%E9%A1%B502.docx) |
 | 标准表格单页03 | [templates/01_表格简历/单页/标准表格单页03.docx](./templates/01_%E8%A1%A8%E6%A0%BC%E7%AE%80%E5%8E%86/%E5%8D%95%E9%A1%B5/%E6%A0%87%E5%87%86%E8%A1%A8%E6%A0%BC%E5%8D%95%E9%A1%B503.docx) |
@@ -137,7 +137,7 @@ This catalog lists 2132 editable Word resume templates from [HICV.cn](https://hi
 
 模板数量：897
 
-| Template | File |
+| 模板名称 | 下载文件 |
 | --- | --- |
 | 单页001 简约 | [templates/02_简约简历/单页/单页001-简约.docx](./templates/02_%E7%AE%80%E7%BA%A6%E7%AE%80%E5%8E%86/%E5%8D%95%E9%A1%B5/%E5%8D%95%E9%A1%B5001-%E7%AE%80%E7%BA%A6.docx) |
 | 单页002 简约 | [templates/02_简约简历/单页/单页002-简约.docx](./templates/02_%E7%AE%80%E7%BA%A6%E7%AE%80%E5%8E%86/%E5%8D%95%E9%A1%B5/%E5%8D%95%E9%A1%B5002-%E7%AE%80%E7%BA%A6.docx) |
@@ -1043,7 +1043,7 @@ This catalog lists 2132 editable Word resume templates from [HICV.cn](https://hi
 
 模板数量：28
 
-| Template | File |
+| 模板名称 | 下载文件 |
 | --- | --- |
 | 活泼封面01 | [templates/03_封面页/活泼封面01.docx](./templates/03_%E5%B0%81%E9%9D%A2%E9%A1%B5/%E6%B4%BB%E6%B3%BC%E5%B0%81%E9%9D%A201.docx) |
 | 活泼封面02 | [templates/03_封面页/活泼封面02.docx](./templates/03_%E5%B0%81%E9%9D%A2%E9%A1%B5/%E6%B4%BB%E6%B3%BC%E5%B0%81%E9%9D%A202.docx) |
@@ -1080,7 +1080,7 @@ This catalog lists 2132 editable Word resume templates from [HICV.cn](https://hi
 
 模板数量：18
 
-| Template | File |
+| 模板名称 | 下载文件 |
 | --- | --- |
 | 活泼单页01 | [templates/04_活泼明朗/活泼单页01.docx](./templates/04_%E6%B4%BB%E6%B3%BC%E6%98%8E%E6%9C%97/%E6%B4%BB%E6%B3%BC%E5%8D%95%E9%A1%B501.docx) |
 | 活泼单页02 | [templates/04_活泼明朗/活泼单页02.docx](./templates/04_%E6%B4%BB%E6%B3%BC%E6%98%8E%E6%9C%97/%E6%B4%BB%E6%B3%BC%E5%8D%95%E9%A1%B502.docx) |
@@ -1107,7 +1107,7 @@ This catalog lists 2132 editable Word resume templates from [HICV.cn](https://hi
 
 模板数量：29
 
-| Template | File |
+| 模板名称 | 下载文件 |
 | --- | --- |
 | 简约单页01 | [templates/05_简约优雅/简约单页01.docx](./templates/05_%E7%AE%80%E7%BA%A6%E4%BC%98%E9%9B%85/%E7%AE%80%E7%BA%A6%E5%8D%95%E9%A1%B501.docx) |
 | 简约单页02 | [templates/05_简约优雅/简约单页02.docx](./templates/05_%E7%AE%80%E7%BA%A6%E4%BC%98%E9%9B%85/%E7%AE%80%E7%BA%A6%E5%8D%95%E9%A1%B502.docx) |
@@ -1145,7 +1145,7 @@ This catalog lists 2132 editable Word resume templates from [HICV.cn](https://hi
 
 模板数量：20
 
-| Template | File |
+| 模板名称 | 下载文件 |
 | --- | --- |
 | 文艺单页01 | [templates/06_文艺清新/文艺单页01.docx](./templates/06_%E6%96%87%E8%89%BA%E6%B8%85%E6%96%B0/%E6%96%87%E8%89%BA%E5%8D%95%E9%A1%B501.docx) |
 | 文艺单页02 | [templates/06_文艺清新/文艺单页02.docx](./templates/06_%E6%96%87%E8%89%BA%E6%B8%85%E6%96%B0/%E6%96%87%E8%89%BA%E5%8D%95%E9%A1%B502.docx) |
@@ -1174,7 +1174,7 @@ This catalog lists 2132 editable Word resume templates from [HICV.cn](https://hi
 
 模板数量：25
 
-| Template | File |
+| 模板名称 | 下载文件 |
 | --- | --- |
 | 稳重单页01 | [templates/07_稳重大气/稳重单页01.docx](./templates/07_%E7%A8%B3%E9%87%8D%E5%A4%A7%E6%B0%94/%E7%A8%B3%E9%87%8D%E5%8D%95%E9%A1%B501.docx) |
 | 稳重单页02 | [templates/07_稳重大气/稳重单页02.docx](./templates/07_%E7%A8%B3%E9%87%8D%E5%A4%A7%E6%B0%94/%E7%A8%B3%E9%87%8D%E5%8D%95%E9%A1%B502.docx) |
@@ -1208,7 +1208,7 @@ This catalog lists 2132 editable Word resume templates from [HICV.cn](https://hi
 
 模板数量：102
 
-| Template | File |
+| 模板名称 | 下载文件 |
 | --- | --- |
 | 表格式 两页 | [templates/08_职业风格/表格式-两页.docx](./templates/08_%E8%81%8C%E4%B8%9A%E9%A3%8E%E6%A0%BC/%E8%A1%A8%E6%A0%BC%E5%BC%8F-%E4%B8%A4%E9%A1%B5.docx) |
 | 法律专业通用版简历模板 无照片 | [templates/08_职业风格/法律专业通用版简历模板-无照片.docx](./templates/08_%E8%81%8C%E4%B8%9A%E9%A3%8E%E6%A0%BC/%E6%B3%95%E5%BE%8B%E4%B8%93%E4%B8%9A%E9%80%9A%E7%94%A8%E7%89%88%E7%AE%80%E5%8E%86%E6%A8%A1%E6%9D%BF-%E6%97%A0%E7%85%A7%E7%89%87.docx) |
@@ -1301,17 +1301,17 @@ This catalog lists 2132 editable Word resume templates from [HICV.cn](https://hi
 | 应聘IT咨询公司的简历模板 无照片01 | [templates/08_职业风格/应聘IT咨询公司的简历模板-无照片01.docx](./templates/08_%E8%81%8C%E4%B8%9A%E9%A3%8E%E6%A0%BC/%E5%BA%94%E8%81%98IT%E5%92%A8%E8%AF%A2%E5%85%AC%E5%8F%B8%E7%9A%84%E7%AE%80%E5%8E%86%E6%A8%A1%E6%9D%BF-%E6%97%A0%E7%85%A7%E7%89%8701.docx) |
 | 应聘IT咨询公司的简历模板 无照片02 | [templates/08_职业风格/应聘IT咨询公司的简历模板-无照片02.docx](./templates/08_%E8%81%8C%E4%B8%9A%E9%A3%8E%E6%A0%BC/%E5%BA%94%E8%81%98IT%E5%92%A8%E8%AF%A2%E5%85%AC%E5%8F%B8%E7%9A%84%E7%AE%80%E5%8E%86%E6%A8%A1%E6%9D%BF-%E6%97%A0%E7%85%A7%E7%89%8702.docx) |
 | 幼儿教师的简历模板蓝色 | [templates/08_职业风格/幼儿教师的简历模板蓝色.docx](./templates/08_%E8%81%8C%E4%B8%9A%E9%A3%8E%E6%A0%BC/%E5%B9%BC%E5%84%BF%E6%95%99%E5%B8%88%E7%9A%84%E7%AE%80%E5%8E%86%E6%A8%A1%E6%9D%BF%E8%93%9D%E8%89%B2.docx) |
-| Resume Template for Architecture Position 2 | [templates/08_职业风格/Resume_Template_for_Architecture_Position_2.docx](./templates/08_%E8%81%8C%E4%B8%9A%E9%A3%8E%E6%A0%BC/Resume_Template_for_Architecture_Position_2.docx) |
-| Resume Template for Architecture Position | [templates/08_职业风格/Resume_Template_for_Architecture_Position.docx](./templates/08_%E8%81%8C%E4%B8%9A%E9%A3%8E%E6%A0%BC/Resume_Template_for_Architecture_Position.docx) |
-| Resume Template for Banking1 | [templates/08_职业风格/Resume_Template_for_Banking1.docx](./templates/08_%E8%81%8C%E4%B8%9A%E9%A3%8E%E6%A0%BC/Resume_Template_for_Banking1.docx) |
-| Resume Template for Chemical Engineering Internship | [templates/08_职业风格/Resume_Template_for_Chemical_Engineering_Internship.docx](./templates/08_%E8%81%8C%E4%B8%9A%E9%A3%8E%E6%A0%BC/Resume_Template_for_Chemical_Engineering_Internship.docx) |
-| Resume Template for Commercial Officer 商务专员英文简历模版（外贸） 2 | [templates/08_职业风格/Resume_Template_for_Commercial_Officer_商务专员英文简历模版（外贸）_2.docx](./templates/08_%E8%81%8C%E4%B8%9A%E9%A3%8E%E6%A0%BC/Resume_Template_for_Commercial_Officer_%E5%95%86%E5%8A%A1%E4%B8%93%E5%91%98%E8%8B%B1%E6%96%87%E7%AE%80%E5%8E%86%E6%A8%A1%E7%89%88%EF%BC%88%E5%A4%96%E8%B4%B8%EF%BC%89_2.docx) |
-| Resume Template for Commercial Officer 商务专员英文简历模版（外贸） | [templates/08_职业风格/Resume_Template_for_Commercial_Officer_商务专员英文简历模版（外贸）.docx](./templates/08_%E8%81%8C%E4%B8%9A%E9%A3%8E%E6%A0%BC/Resume_Template_for_Commercial_Officer_%E5%95%86%E5%8A%A1%E4%B8%93%E5%91%98%E8%8B%B1%E6%96%87%E7%AE%80%E5%8E%86%E6%A8%A1%E7%89%88%EF%BC%88%E5%A4%96%E8%B4%B8%EF%BC%89.docx) |
-| Resume Template for Laboratory Position | [templates/08_职业风格/Resume_Template_for_Laboratory_Position.docx](./templates/08_%E8%81%8C%E4%B8%9A%E9%A3%8E%E6%A0%BC/Resume_Template_for_Laboratory_Position.docx) |
-| Resume Template for Law firm Internship 2 | [templates/08_职业风格/Resume_Template_for_Law_firm_Internship-2.docx](./templates/08_%E8%81%8C%E4%B8%9A%E9%A3%8E%E6%A0%BC/Resume_Template_for_Law_firm_Internship-2.docx) |
-| Resume Template for Law firm Internship | [templates/08_职业风格/Resume_Template_for_Law_firm_Internship.docx](./templates/08_%E8%81%8C%E4%B8%9A%E9%A3%8E%E6%A0%BC/Resume_Template_for_Law_firm_Internship.docx) |
-| Resume Template for Logistics | [templates/08_职业风格/Resume_Template_for_Logistics.docx](./templates/08_%E8%81%8C%E4%B8%9A%E9%A3%8E%E6%A0%BC/Resume_Template_for_Logistics.docx) |
-| Resume Template for Software Engineer2 | [templates/08_职业风格/Resume_Template_for_Software_Engineer2.docx](./templates/08_%E8%81%8C%E4%B8%9A%E9%A3%8E%E6%A0%BC/Resume_Template_for_Software_Engineer2.docx) |
+| 建筑岗位英文简历模板 2 | [templates/08_职业风格/Resume_Template_for_Architecture_Position_2.docx](./templates/08_%E8%81%8C%E4%B8%9A%E9%A3%8E%E6%A0%BC/Resume_Template_for_Architecture_Position_2.docx) |
+| 建筑岗位英文简历模板 | [templates/08_职业风格/Resume_Template_for_Architecture_Position.docx](./templates/08_%E8%81%8C%E4%B8%9A%E9%A3%8E%E6%A0%BC/Resume_Template_for_Architecture_Position.docx) |
+| 银行岗位英文简历模板 | [templates/08_职业风格/Resume_Template_for_Banking1.docx](./templates/08_%E8%81%8C%E4%B8%9A%E9%A3%8E%E6%A0%BC/Resume_Template_for_Banking1.docx) |
+| 化工实习英文简历模板 | [templates/08_职业风格/Resume_Template_for_Chemical_Engineering_Internship.docx](./templates/08_%E8%81%8C%E4%B8%9A%E9%A3%8E%E6%A0%BC/Resume_Template_for_Chemical_Engineering_Internship.docx) |
+| 商务专员英文简历模板（外贸）2 | [templates/08_职业风格/Resume_Template_for_Commercial_Officer_商务专员英文简历模版（外贸）_2.docx](./templates/08_%E8%81%8C%E4%B8%9A%E9%A3%8E%E6%A0%BC/Resume_Template_for_Commercial_Officer_%E5%95%86%E5%8A%A1%E4%B8%93%E5%91%98%E8%8B%B1%E6%96%87%E7%AE%80%E5%8E%86%E6%A8%A1%E7%89%88%EF%BC%88%E5%A4%96%E8%B4%B8%EF%BC%89_2.docx) |
+| 商务专员英文简历模板（外贸） | [templates/08_职业风格/Resume_Template_for_Commercial_Officer_商务专员英文简历模版（外贸）.docx](./templates/08_%E8%81%8C%E4%B8%9A%E9%A3%8E%E6%A0%BC/Resume_Template_for_Commercial_Officer_%E5%95%86%E5%8A%A1%E4%B8%93%E5%91%98%E8%8B%B1%E6%96%87%E7%AE%80%E5%8E%86%E6%A8%A1%E7%89%88%EF%BC%88%E5%A4%96%E8%B4%B8%EF%BC%89.docx) |
+| 实验室岗位英文简历模板 | [templates/08_职业风格/Resume_Template_for_Laboratory_Position.docx](./templates/08_%E8%81%8C%E4%B8%9A%E9%A3%8E%E6%A0%BC/Resume_Template_for_Laboratory_Position.docx) |
+| 律所实习英文简历模板 2 | [templates/08_职业风格/Resume_Template_for_Law_firm_Internship-2.docx](./templates/08_%E8%81%8C%E4%B8%9A%E9%A3%8E%E6%A0%BC/Resume_Template_for_Law_firm_Internship-2.docx) |
+| 律所实习英文简历模板 | [templates/08_职业风格/Resume_Template_for_Law_firm_Internship.docx](./templates/08_%E8%81%8C%E4%B8%9A%E9%A3%8E%E6%A0%BC/Resume_Template_for_Law_firm_Internship.docx) |
+| 物流岗位英文简历模板 | [templates/08_职业风格/Resume_Template_for_Logistics.docx](./templates/08_%E8%81%8C%E4%B8%9A%E9%A3%8E%E6%A0%BC/Resume_Template_for_Logistics.docx) |
+| 软件工程师英文简历模板 | [templates/08_职业风格/Resume_Template_for_Software_Engineer2.docx](./templates/08_%E8%81%8C%E4%B8%9A%E9%A3%8E%E6%A0%BC/Resume_Template_for_Software_Engineer2.docx) |
 
 ## 09_行业专属
 
@@ -1319,7 +1319,7 @@ This catalog lists 2132 editable Word resume templates from [HICV.cn](https://hi
 
 模板数量：496
 
-| Template | File |
+| 模板名称 | 下载文件 |
 | --- | --- |
 | 保险理财 单页230 | [templates/09_行业专属/保险理财-单页230.docx](./templates/09_%E8%A1%8C%E4%B8%9A%E4%B8%93%E5%B1%9E/%E4%BF%9D%E9%99%A9%E7%90%86%E8%B4%A2-%E5%8D%95%E9%A1%B5230.docx) |
 | 财务 单页013 简约 | [templates/09_行业专属/财务-单页013-简约.docx](./templates/09_%E8%A1%8C%E4%B8%9A%E4%B8%93%E5%B1%9E/%E8%B4%A2%E5%8A%A1-%E5%8D%95%E9%A1%B5013-%E7%AE%80%E7%BA%A6.docx) |
@@ -1824,7 +1824,7 @@ This catalog lists 2132 editable Word resume templates from [HICV.cn](https://hi
 
 模板数量：29
 
-| Template | File |
+| 模板名称 | 下载文件 |
 | --- | --- |
 | 小红书爆款单页简历模板1 19086p | [templates/10_小红书风格/小红书爆款单页简历模板1_19086p.docx](./templates/10_%E5%B0%8F%E7%BA%A2%E4%B9%A6%E9%A3%8E%E6%A0%BC/%E5%B0%8F%E7%BA%A2%E4%B9%A6%E7%88%86%E6%AC%BE%E5%8D%95%E9%A1%B5%E7%AE%80%E5%8E%86%E6%A8%A1%E6%9D%BF1_19086p.docx) |
 | 小红书爆款单页简历模板1 8ayfcq | [templates/10_小红书风格/小红书爆款单页简历模板1_8ayfcq.docx](./templates/10_%E5%B0%8F%E7%BA%A2%E4%B9%A6%E9%A3%8E%E6%A0%BC/%E5%B0%8F%E7%BA%A2%E4%B9%A6%E7%88%86%E6%AC%BE%E5%8D%95%E9%A1%B5%E7%AE%80%E5%8E%86%E6%A8%A1%E6%9D%BF1_8ayfcq.docx) |
@@ -1858,11 +1858,11 @@ This catalog lists 2132 editable Word resume templates from [HICV.cn](https://hi
 
 ## 11_英文简历
 
-English resume and CV templates for international job applications.
+英文简历、英文 CV、外企求职和留学申请相关模板。
 
 模板数量：81
 
-| Template | File |
+| 模板名称 | 下载文件 |
 | --- | --- |
 | 英文简历 单页01 | [templates/11_英文简历/英文简历-单页01.docx](./templates/11_%E8%8B%B1%E6%96%87%E7%AE%80%E5%8E%86/%E8%8B%B1%E6%96%87%E7%AE%80%E5%8E%86-%E5%8D%95%E9%A1%B501.docx) |
 | 英文简历 单页02 | [templates/11_英文简历/英文简历-单页02.docx](./templates/11_%E8%8B%B1%E6%96%87%E7%AE%80%E5%8E%86/%E8%8B%B1%E6%96%87%E7%AE%80%E5%8E%86-%E5%8D%95%E9%A1%B502.docx) |
@@ -1952,7 +1952,7 @@ English resume and CV templates for international job applications.
 
 模板数量：32
 
-| Template | File |
+| 模板名称 | 下载文件 |
 | --- | --- |
 | 调剂申请表01 空白 | [templates/12_研究生复试/调剂申请表01-空白.docx](./templates/12_%E7%A0%94%E7%A9%B6%E7%94%9F%E5%A4%8D%E8%AF%95/%E8%B0%83%E5%89%82%E7%94%B3%E8%AF%B7%E8%A1%A801-%E7%A9%BA%E7%99%BD.docx) |
 | 调剂申请表04 空白 | [templates/12_研究生复试/调剂申请表04-空白.docx](./templates/12_%E7%A0%94%E7%A9%B6%E7%94%9F%E5%A4%8D%E8%AF%95/%E8%B0%83%E5%89%82%E7%94%B3%E8%AF%B7%E8%A1%A804-%E7%A9%BA%E7%99%BD.docx) |
@@ -1993,7 +1993,7 @@ English resume and CV templates for international job applications.
 
 模板数量：17
 
-| Template | File |
+| 模板名称 | 下载文件 |
 | --- | --- |
 | 01 g915t1 | [templates/13_小升初自我介绍/01_g915t1.docx](./templates/13_%E5%B0%8F%E5%8D%87%E5%88%9D%E8%87%AA%E6%88%91%E4%BB%8B%E7%BB%8D/01_g915t1.docx) |
 | 02 29b76p | [templates/13_小升初自我介绍/02_29b76p.docx](./templates/13_%E5%B0%8F%E5%8D%87%E5%88%9D%E8%87%AA%E6%88%91%E4%BB%8B%E7%BB%8D/02_29b76p.docx) |
@@ -2019,7 +2019,7 @@ English resume and CV templates for international job applications.
 
 模板数量：223
 
-| Template | File |
+| 模板名称 | 下载文件 |
 | --- | --- |
 | 活泼单页01 | [templates/14_其他风格/活泼单页01.docx](./templates/14_%E5%85%B6%E4%BB%96%E9%A3%8E%E6%A0%BC/%E6%B4%BB%E6%B3%BC%E5%8D%95%E9%A1%B501.docx) |
 | 活泼单页02 | [templates/14_其他风格/活泼单页02.docx](./templates/14_%E5%85%B6%E4%BB%96%E9%A3%8E%E6%A0%BC/%E6%B4%BB%E6%B3%BC%E5%8D%95%E9%A1%B502.docx) |
@@ -2251,7 +2251,7 @@ English resume and CV templates for international job applications.
 
 模板数量：17
 
-| Template | File |
+| 模板名称 | 下载文件 |
 | --- | --- |
 | 10 | [templates/15_自荐信与范文/10.docx](./templates/15_%E8%87%AA%E8%8D%90%E4%BF%A1%E4%B8%8E%E8%8C%83%E6%96%87/10.docx) |
 | 11 | [templates/15_自荐信与范文/11.docx](./templates/15_%E8%87%AA%E8%8D%90%E4%BF%A1%E4%B8%8E%E8%8C%83%E6%96%87/11.docx) |

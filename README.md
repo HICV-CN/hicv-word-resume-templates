@@ -1,69 +1,66 @@
-# HICV Word Resume Templates
+# HICV 简历模板库：Word 简历模板免费下载
 
-2132 free editable Word resume templates from [HICV.cn](https://hicv.cn), including Chinese resume templates, English CV templates, graduate school interview resumes, cover letters, industry-specific resumes, and professional DOCX templates for job seekers.
+这里整理了来自 [HICV.cn](https://hicv.cn) 的 2132 套可编辑 Word 简历模板，覆盖中文简历模板、个人简历模板、应届生简历模板、行业简历模板、研究生复试简历、自荐信模板、英文简历模板等常见求职场景。
 
-This repository is designed as an open template library for people searching for:
+模板均为 `.docx` 格式，可使用 Microsoft Word、WPS Office 或兼容 DOCX 的编辑器打开修改。模板页眉页脚中已保留 HICV.cn 来源信息，便于求职用户继续访问 HICV 获取 AI 简历生成、简历范文、面经和校招信息。
+
+## 常用入口
+
+- [完整模板索引](./TEMPLATE_INDEX.md)
+- [模板文件目录](./templates)
+- [在线落地页](https://hicv-cn.github.io/hicv-word-resume-templates/)
+- [HICV.cn AI 简历生成](https://hicv.cn)
+- [简历范文](https://hicv.cn/fanwen)
+- [真实面经](https://hicv.cn/mianjing)
+- [校招信息](https://hicv.cn/xiaozhao)
+
+## 适合搜索这些关键词的用户
 
 - Word 简历模板
+- 简历模板免费下载
 - 中文简历模板
 - 个人简历模板
 - 求职简历模板
-- 英文简历 / English CV template
 - 应届生简历模板
+- 大学生简历模板
 - 研究生复试简历模板
 - 行业专属简历模板
-- DOCX resume template
+- 自荐信模板
+- 英文简历模板
+- DOCX 简历模板
 
-## Download Templates
+## 模板分类
 
-All templates are editable `.docx` files and can be opened with Microsoft Word, WPS Office, LibreOffice, or other Word-compatible editors.
-
-Browse the full template catalog:
-
-- [Template Index](./TEMPLATE_INDEX.md)
-- [GitHub Pages landing page](https://hicv-cn.github.io/hicv-word-resume-templates/)
-- [Templates directory](./templates)
-
-## Template Categories
-
-| Category | Description | Count |
+| 分类 | 适用场景 | 数量 |
 | --- | --- | ---: |
-| 表格简历 | Traditional table-style resume templates, single-page, two-page, and multi-page | 118 |
-| 简约简历 | Modern minimalist Word resume templates | 897 |
-| 封面页 | Standalone resume cover page templates | 28 |
-| 活泼明朗 | Bright and energetic resume designs | 18 |
-| 简约优雅 | Elegant minimalist resume designs | 29 |
-| 文艺清新 | Fresh creative resume templates | 20 |
-| 稳重大气 | Formal and professional resume templates | 25 |
-| 职业风格 | Business and workplace-oriented resume templates | 102 |
-| 行业专属 | Industry-specific resumes for teachers, finance, medicine, sales, technology, and more | 496 |
-| 小红书风格 | Social-media inspired resume styles | 29 |
-| 英文简历 | English resume and CV templates | 81 |
-| 研究生复试 | Graduate school interview and transfer application templates | 32 |
-| 小升初自我介绍 | Student self-introduction templates | 17 |
-| 其他风格 | Additional creative resume styles | 223 |
-| 自荐信与范文 | Cover letters and application letter examples | 17 |
+| 表格简历 | 传统表格式简历，适合信息密度高、稳妥清晰的中文简历 | 118 |
+| 简约简历 | 现代简约风格，覆盖单页、双页、三页、四页等版式 | 897 |
+| 封面页 | 独立简历封面，可搭配多页简历或求职材料使用 | 28 |
+| 活泼明朗 | 校招、实习、创意岗位等更年轻的简历风格 | 18 |
+| 简约优雅 | 行政、运营、职能类岗位常用的清爽简历版式 | 29 |
+| 文艺清新 | 教育、传媒、内容、设计等方向的清新风格模板 | 20 |
+| 稳重大气 | 管理、金融、咨询、成熟职场场景的正式简历 | 25 |
+| 职业风格 | 通用求职、办公岗位、职业化岗位简历模板 | 102 |
+| 行业专属 | 教师、医学、财务、销售、技术、运营等行业简历 | 496 |
+| 小红书风格 | 更适合社媒审美和年轻求职者的视觉简历 | 29 |
+| 英文简历 | 英文简历、英文 CV、外企和留学申请相关模板 | 81 |
+| 研究生复试 | 复试简历、调剂申请表、研究生面试材料 | 32 |
+| 小升初自我介绍 | 学生自我介绍、成长展示、小升初材料 | 17 |
+| 其他风格 | 莫兰迪、古风、艺术气质、现代时尚等创意模板 | 223 |
+| 自荐信与范文 | 自荐信、求职信、简历范文和配套文书 | 17 |
 
-## About HICV.cn
+## 使用方式
 
-[HICV.cn](https://hicv.cn) helps job seekers create resumes faster with AI resume generation, editable templates, resume examples, interview experiences, and campus recruitment information.
+1. 打开 [templates](./templates) 目录。
+2. 按风格、行业、页数选择合适的 `.docx` 文件。
+3. 下载后用 Word 或 WPS 修改个人信息、教育经历、实习经历和项目经历。
+4. 投递前导出 PDF，避免不同设备打开时排版变化。
+5. 转发或二次整理时请保留 HICV.cn 来源信息。
 
-Useful links:
+## 关于 HICV
 
-- [AI resume builder](https://hicv.cn)
-- [Resume examples](https://hicv.cn/fanwen)
-- [Interview experiences](https://hicv.cn/mianjing)
-- [Campus recruitment](https://hicv.cn/xiaozhao)
+[HICV.cn](https://hicv.cn) 提供 AI 简历生成、在线简历模板、简历范文、真实面经、校招信息等求职工具，帮助应届生和职场人更快完成高质量简历。
 
-## Usage
+## 授权说明
 
-1. Open the [templates](./templates) directory.
-2. Choose a style, industry, or page count.
-3. Download the `.docx` file.
-4. Edit the resume content in Microsoft Word or WPS.
-5. Keep the HICV.cn attribution when sharing or redistributing templates.
-
-## License
-
-Free to use and share with attribution. Please keep the source notice for [HICV.cn](https://hicv.cn). See [LICENSE](./LICENSE).
-
+模板可免费使用和转发，请保留 [HICV.cn](https://hicv.cn) 来源信息。详见 [LICENSE](./LICENSE)。
