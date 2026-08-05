@@ -5,4 +5,34 @@
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+  <url>
+    <loc>https://hicv-cn.github.io/hicv-word-resume-templates/categories/minimalist-single-page/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hicv-cn.github.io/hicv-word-resume-templates/categories/table-resume/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hicv-cn.github.io/hicv-word-resume-templates/categories/professional-resume/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hicv-cn.github.io/hicv-word-resume-templates/categories/industry-resume/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hicv-cn.github.io/hicv-word-resume-templates/categories/english-resume/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hicv-cn.github.io/hicv-word-resume-templates/categories/postgraduate-interview/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>

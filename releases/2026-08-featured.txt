@@ -1,0 +1,12 @@
+templates/02_简约简历/单页/单页001-简约.docx
+templates/02_简约简历/单页/单页010-简约.docx
+templates/02_简约简历/单页/单页040-极简蓝.docx
+templates/02_简约简历/单页/单页079.docx
+templates/01_表格简历/单页/单页表格简历 01.docx
+templates/01_表格简历/单页/标准表格单页02.docx
+templates/08_职业风格/应聘四大的简历模板.docx
+templates/08_职业风格/应聘教师的精简式简历.docx
+templates/09_行业专属/前端-单页179.docx
+templates/09_行业专属/会计-单页024-简约.docx
+templates/11_英文简历/英文简历-单页01.docx
+templates/12_研究生复试/复试单页001.docx

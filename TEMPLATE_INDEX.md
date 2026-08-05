@@ -1,12 +1,12 @@
 # HICV 简历模板索引
 
-这里收录了 2132 套来自 [HICV.cn](https://hicv.cn) 的可编辑 Word 简历模板，包含中文简历模板、个人简历模板、求职简历模板、行业专属简历、研究生复试简历、自荐信模板和英文简历模板。
+这里收录了 2132 套来自 [HICV.cn](https://hicv.cn/templates?utm_source=github&utm_medium=referral&utm_campaign=word_resume_templates&utm_content=template_index_intro) 的可编辑 Word 简历模板，包含中文简历模板、个人简历模板、求职简历模板、行业专属简历、研究生复试简历、自荐信模板和英文简历模板。
 
-> 所有文件均为 DOCX 格式，适合 Microsoft Word、WPS Office 和兼容 DOCX 的编辑器。更多 AI 简历生成、简历范文、面经和校招信息可访问 [hicv.cn](https://hicv.cn)。
+> 所有文件均为 DOCX 格式，适合 Microsoft Word、WPS Office 和兼容 DOCX 的编辑器。在线制作和优化简历请访问 [HICV 在线模板](https://hicv.cn/templates?utm_source=github&utm_medium=referral&utm_campaign=word_resume_templates&utm_content=template_index_callout)。
 
 ## 01_表格简历
 
-传统表格式简历，适合稳妥、清晰、信息密度高的中文简历场景。
+传统表格式简历，适合信息密度高、格式稳妥的中文求职场景。
 
 模板数量：118
 
@@ -1039,7 +1039,7 @@
 
 ## 03_封面页
 
-独立简历封面页，可搭配多页简历或求职材料使用。
+独立简历封面页，可搭配多页简历或其他求职材料使用。
 
 模板数量：28
 
@@ -1076,7 +1076,7 @@
 
 ## 04_活泼明朗
 
-活泼明朗风格，适合校园招聘、实习、创意岗位。
+明快风格，适合校园招聘、实习和部分创意岗位。
 
 模板数量：18
 
@@ -1103,7 +1103,7 @@
 
 ## 05_简约优雅
 
-简约优雅风格，适合行政、运营、职能类岗位。
+清爽克制的版式，适合行政、运营和职能类岗位。
 
 模板数量：29
 
@@ -1141,7 +1141,7 @@
 
 ## 06_文艺清新
 
-文艺清新风格，适合传媒、教育、内容和设计相关岗位。
+清新风格，适合传媒、教育、内容和设计相关岗位。
 
 模板数量：20
 
@@ -1170,7 +1170,7 @@
 
 ## 07_稳重大气
 
-稳重大气风格，适合管理、金融、咨询和成熟职业场景。
+正式稳重，适合管理、金融、咨询和成熟职业场景。
 
 模板数量：25
 
@@ -1204,7 +1204,7 @@
 
 ## 08_职业风格
 
-职业化 Word 简历模板，适合通用求职和办公岗位。
+按岗位和职业场景组织的 Word 简历模板。
 
 模板数量：102
 
@@ -1301,21 +1301,21 @@
 | 应聘IT咨询公司的简历模板 无照片01 | [templates/08_职业风格/应聘IT咨询公司的简历模板-无照片01.docx](./templates/08_%E8%81%8C%E4%B8%9A%E9%A3%8E%E6%A0%BC/%E5%BA%94%E8%81%98IT%E5%92%A8%E8%AF%A2%E5%85%AC%E5%8F%B8%E7%9A%84%E7%AE%80%E5%8E%86%E6%A8%A1%E6%9D%BF-%E6%97%A0%E7%85%A7%E7%89%8701.docx) |
 | 应聘IT咨询公司的简历模板 无照片02 | [templates/08_职业风格/应聘IT咨询公司的简历模板-无照片02.docx](./templates/08_%E8%81%8C%E4%B8%9A%E9%A3%8E%E6%A0%BC/%E5%BA%94%E8%81%98IT%E5%92%A8%E8%AF%A2%E5%85%AC%E5%8F%B8%E7%9A%84%E7%AE%80%E5%8E%86%E6%A8%A1%E6%9D%BF-%E6%97%A0%E7%85%A7%E7%89%8702.docx) |
 | 幼儿教师的简历模板蓝色 | [templates/08_职业风格/幼儿教师的简历模板蓝色.docx](./templates/08_%E8%81%8C%E4%B8%9A%E9%A3%8E%E6%A0%BC/%E5%B9%BC%E5%84%BF%E6%95%99%E5%B8%88%E7%9A%84%E7%AE%80%E5%8E%86%E6%A8%A1%E6%9D%BF%E8%93%9D%E8%89%B2.docx) |
-| 建筑岗位英文简历模板 2 | [templates/08_职业风格/Resume_Template_for_Architecture_Position_2.docx](./templates/08_%E8%81%8C%E4%B8%9A%E9%A3%8E%E6%A0%BC/Resume_Template_for_Architecture_Position_2.docx) |
-| 建筑岗位英文简历模板 | [templates/08_职业风格/Resume_Template_for_Architecture_Position.docx](./templates/08_%E8%81%8C%E4%B8%9A%E9%A3%8E%E6%A0%BC/Resume_Template_for_Architecture_Position.docx) |
-| 银行岗位英文简历模板 | [templates/08_职业风格/Resume_Template_for_Banking1.docx](./templates/08_%E8%81%8C%E4%B8%9A%E9%A3%8E%E6%A0%BC/Resume_Template_for_Banking1.docx) |
-| 化工实习英文简历模板 | [templates/08_职业风格/Resume_Template_for_Chemical_Engineering_Internship.docx](./templates/08_%E8%81%8C%E4%B8%9A%E9%A3%8E%E6%A0%BC/Resume_Template_for_Chemical_Engineering_Internship.docx) |
-| 商务专员英文简历模板（外贸）2 | [templates/08_职业风格/Resume_Template_for_Commercial_Officer_商务专员英文简历模版（外贸）_2.docx](./templates/08_%E8%81%8C%E4%B8%9A%E9%A3%8E%E6%A0%BC/Resume_Template_for_Commercial_Officer_%E5%95%86%E5%8A%A1%E4%B8%93%E5%91%98%E8%8B%B1%E6%96%87%E7%AE%80%E5%8E%86%E6%A8%A1%E7%89%88%EF%BC%88%E5%A4%96%E8%B4%B8%EF%BC%89_2.docx) |
-| 商务专员英文简历模板（外贸） | [templates/08_职业风格/Resume_Template_for_Commercial_Officer_商务专员英文简历模版（外贸）.docx](./templates/08_%E8%81%8C%E4%B8%9A%E9%A3%8E%E6%A0%BC/Resume_Template_for_Commercial_Officer_%E5%95%86%E5%8A%A1%E4%B8%93%E5%91%98%E8%8B%B1%E6%96%87%E7%AE%80%E5%8E%86%E6%A8%A1%E7%89%88%EF%BC%88%E5%A4%96%E8%B4%B8%EF%BC%89.docx) |
-| 实验室岗位英文简历模板 | [templates/08_职业风格/Resume_Template_for_Laboratory_Position.docx](./templates/08_%E8%81%8C%E4%B8%9A%E9%A3%8E%E6%A0%BC/Resume_Template_for_Laboratory_Position.docx) |
-| 律所实习英文简历模板 2 | [templates/08_职业风格/Resume_Template_for_Law_firm_Internship-2.docx](./templates/08_%E8%81%8C%E4%B8%9A%E9%A3%8E%E6%A0%BC/Resume_Template_for_Law_firm_Internship-2.docx) |
-| 律所实习英文简历模板 | [templates/08_职业风格/Resume_Template_for_Law_firm_Internship.docx](./templates/08_%E8%81%8C%E4%B8%9A%E9%A3%8E%E6%A0%BC/Resume_Template_for_Law_firm_Internship.docx) |
-| 物流岗位英文简历模板 | [templates/08_职业风格/Resume_Template_for_Logistics.docx](./templates/08_%E8%81%8C%E4%B8%9A%E9%A3%8E%E6%A0%BC/Resume_Template_for_Logistics.docx) |
-| 软件工程师英文简历模板 | [templates/08_职业风格/Resume_Template_for_Software_Engineer2.docx](./templates/08_%E8%81%8C%E4%B8%9A%E9%A3%8E%E6%A0%BC/Resume_Template_for_Software_Engineer2.docx) |
+| Resume Template for Architecture Position 2 | [templates/08_职业风格/Resume_Template_for_Architecture_Position_2.docx](./templates/08_%E8%81%8C%E4%B8%9A%E9%A3%8E%E6%A0%BC/Resume_Template_for_Architecture_Position_2.docx) |
+| Resume Template for Architecture Position | [templates/08_职业风格/Resume_Template_for_Architecture_Position.docx](./templates/08_%E8%81%8C%E4%B8%9A%E9%A3%8E%E6%A0%BC/Resume_Template_for_Architecture_Position.docx) |
+| Resume Template for Banking1 | [templates/08_职业风格/Resume_Template_for_Banking1.docx](./templates/08_%E8%81%8C%E4%B8%9A%E9%A3%8E%E6%A0%BC/Resume_Template_for_Banking1.docx) |
+| Resume Template for Chemical Engineering Internship | [templates/08_职业风格/Resume_Template_for_Chemical_Engineering_Internship.docx](./templates/08_%E8%81%8C%E4%B8%9A%E9%A3%8E%E6%A0%BC/Resume_Template_for_Chemical_Engineering_Internship.docx) |
+| Resume Template for Commercial Officer 商务专员英文简历模版（外贸） 2 | [templates/08_职业风格/Resume_Template_for_Commercial_Officer_商务专员英文简历模版（外贸）_2.docx](./templates/08_%E8%81%8C%E4%B8%9A%E9%A3%8E%E6%A0%BC/Resume_Template_for_Commercial_Officer_%E5%95%86%E5%8A%A1%E4%B8%93%E5%91%98%E8%8B%B1%E6%96%87%E7%AE%80%E5%8E%86%E6%A8%A1%E7%89%88%EF%BC%88%E5%A4%96%E8%B4%B8%EF%BC%89_2.docx) |
+| Resume Template for Commercial Officer 商务专员英文简历模版（外贸） | [templates/08_职业风格/Resume_Template_for_Commercial_Officer_商务专员英文简历模版（外贸）.docx](./templates/08_%E8%81%8C%E4%B8%9A%E9%A3%8E%E6%A0%BC/Resume_Template_for_Commercial_Officer_%E5%95%86%E5%8A%A1%E4%B8%93%E5%91%98%E8%8B%B1%E6%96%87%E7%AE%80%E5%8E%86%E6%A8%A1%E7%89%88%EF%BC%88%E5%A4%96%E8%B4%B8%EF%BC%89.docx) |
+| Resume Template for Laboratory Position | [templates/08_职业风格/Resume_Template_for_Laboratory_Position.docx](./templates/08_%E8%81%8C%E4%B8%9A%E9%A3%8E%E6%A0%BC/Resume_Template_for_Laboratory_Position.docx) |
+| Resume Template for Law firm Internship 2 | [templates/08_职业风格/Resume_Template_for_Law_firm_Internship-2.docx](./templates/08_%E8%81%8C%E4%B8%9A%E9%A3%8E%E6%A0%BC/Resume_Template_for_Law_firm_Internship-2.docx) |
+| Resume Template for Law firm Internship | [templates/08_职业风格/Resume_Template_for_Law_firm_Internship.docx](./templates/08_%E8%81%8C%E4%B8%9A%E9%A3%8E%E6%A0%BC/Resume_Template_for_Law_firm_Internship.docx) |
+| Resume Template for Logistics | [templates/08_职业风格/Resume_Template_for_Logistics.docx](./templates/08_%E8%81%8C%E4%B8%9A%E9%A3%8E%E6%A0%BC/Resume_Template_for_Logistics.docx) |
+| Resume Template for Software Engineer2 | [templates/08_职业风格/Resume_Template_for_Software_Engineer2.docx](./templates/08_%E8%81%8C%E4%B8%9A%E9%A3%8E%E6%A0%BC/Resume_Template_for_Software_Engineer2.docx) |
 
 ## 09_行业专属
 
-行业专属简历模板，覆盖教师、医学、财务、销售、技术等方向。
+覆盖教师、医学、财务、销售、技术等行业方向。
 
 模板数量：496
 
@@ -1820,7 +1820,7 @@
 
 ## 10_小红书风格
 
-小红书和社媒风格简历模板，视觉表达更年轻。
+更年轻的视觉表达，适合新媒体和创意类场景。
 
 模板数量：29
 
@@ -1858,7 +1858,7 @@
 
 ## 11_英文简历
 
-英文简历、英文 CV、外企求职和留学申请相关模板。
+英文 Resume、英文 CV、外企求职和留学申请模板。
 
 模板数量：81
 
@@ -2015,7 +2015,7 @@
 
 ## 14_其他风格
 
-更多创意、彩色、莫兰迪和特色简历模板。
+彩色、莫兰迪、创意和其他特色简历模板。
 
 模板数量：223
 
@@ -2247,7 +2247,7 @@
 
 ## 15_自荐信与范文
 
-自荐信、求职信和相关范文模板。
+自荐信、求职信和配套范文模板。
 
 模板数量：17
 

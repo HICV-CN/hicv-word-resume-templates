@@ -1,0 +1,23 @@
+name: Verify generated site
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Regenerate index and GitHub Pages
+        run: node scripts/generate-site.mjs
+      - name: Check committed generated files
+        run: git diff --exit-code -- TEMPLATE_INDEX.md docs

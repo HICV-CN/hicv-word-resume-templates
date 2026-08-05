@@ -1,33 +1,36 @@
-# HICV 简历模板库：Word 简历模板免费下载
+# HICV 简历模板库：2,132 套 Word 简历模板免费下载
 
-这里整理了来自 [HICV.cn](https://hicv.cn) 的 2132 套可编辑 Word 简历模板，覆盖中文简历模板、个人简历模板、应届生简历模板、行业简历模板、研究生复试简历、自荐信模板、英文简历模板等常见求职场景。
+这里整理了 2,132 套可编辑 Word 简历模板，覆盖中文个人简历、应届生简历、表格简历、行业岗位简历、研究生复试简历、自荐信和英文简历等常见求职场景。
 
-模板均为 `.docx` 格式，可使用 Microsoft Word、WPS Office 或兼容 DOCX 的编辑器打开修改。模板页眉页脚中已保留 HICV.cn 来源信息，便于求职用户继续访问 HICV 获取 AI 简历生成、简历范文、面经和校招信息。
+模板均为 `.docx` 格式，可使用 Microsoft Word、WPS Office 或兼容 DOCX 的编辑器打开修改。
 
-## 常用入口
+**[在线浏览模板并制作简历](https://hicv.cn/templates?utm_source=github&utm_medium=referral&utm_campaign=word_resume_templates&utm_content=readme_primary)** · [查看完整模板索引](./TEMPLATE_INDEX.md) · [打开模板文件目录](./templates)
 
-- [完整模板索引](./TEMPLATE_INDEX.md)
-- [模板文件目录](./templates)
-- [在线落地页](https://hicv-cn.github.io/hicv-word-resume-templates/)
-- [HICV.cn AI 简历生成](https://hicv.cn)
-- [简历范文](https://hicv.cn/fanwen)
-- [真实面经](https://hicv.cn/mianjing)
-- [校招信息](https://hicv.cn/xiaozhao)
+## 真实模板预览
 
-## 适合搜索这些关键词的用户
+以下图片由仓库中的 DOCX 文件直接渲染。点击图片可查看对应文件。
 
-- Word 简历模板
-- 简历模板免费下载
-- 中文简历模板
-- 个人简历模板
-- 求职简历模板
-- 应届生简历模板
-- 大学生简历模板
-- 研究生复试简历模板
-- 行业专属简历模板
-- 自荐信模板
-- 英文简历模板
-- DOCX 简历模板
+<table>
+  <tr>
+    <td align="center"><a href="./templates/02_%E7%AE%80%E7%BA%A6%E7%AE%80%E5%8E%86/%E5%8D%95%E9%A1%B5/%E5%8D%95%E9%A1%B5001-%E7%AE%80%E7%BA%A6.docx"><img src="./docs/assets/previews/minimalist-001.jpg" width="240" alt="简约单页 Word 简历模板 001"></a><br>简约单页 001</td>
+    <td align="center"><a href="./templates/02_%E7%AE%80%E7%BA%A6%E7%AE%80%E5%8E%86/%E5%8D%95%E9%A1%B5/%E5%8D%95%E9%A1%B5040-%E6%9E%81%E7%AE%80%E8%93%9D.docx"><img src="./docs/assets/previews/minimalist-blue-040.jpg" width="240" alt="极简蓝色 Word 简历模板"></a><br>极简蓝色单页</td>
+    <td align="center"><a href="./templates/01_%E8%A1%A8%E6%A0%BC%E7%AE%80%E5%8E%86/%E5%8D%95%E9%A1%B5/%E5%8D%95%E9%A1%B5%E8%A1%A8%E6%A0%BC%E7%AE%80%E5%8E%86%2001.docx"><img src="./docs/assets/previews/table-001.jpg" width="240" alt="表格 Word 简历模板 001"></a><br>表格单页 001</td>
+  </tr>
+  <tr>
+    <td align="center"><a href="./templates/02_%E7%AE%80%E7%BA%A6%E7%AE%80%E5%8E%86/%E5%8D%95%E9%A1%B5/%E5%8D%95%E9%A1%B5079.docx"><img src="./docs/assets/previews/project-manager-079.jpg" width="240" alt="项目管理 Word 简历模板"></a><br>项目管理单页</td>
+    <td align="center"><a href="./templates/11_%E8%8B%B1%E6%96%87%E7%AE%80%E5%8E%86/%E8%8B%B1%E6%96%87%E7%AE%80%E5%8E%86-%E5%8D%95%E9%A1%B501.docx"><img src="./docs/assets/previews/english-001.jpg" width="240" alt="英文 Word 简历模板 001"></a><br>英文单页 001</td>
+    <td align="center"><a href="./templates/08_%E8%81%8C%E4%B8%9A%E9%A3%8E%E6%A0%BC/%E5%BA%94%E8%81%98%E5%9B%9B%E5%A4%A7%E7%9A%84%E7%AE%80%E5%8E%86%E6%A8%A1%E6%9D%BF.docx"><img src="./docs/assets/previews/big-four.jpg" width="240" alt="四大实习 Word 简历模板"></a><br>四大实习模板</td>
+  </tr>
+</table>
+
+## 高频模板专题
+
+- [简约单页 Word 简历模板](https://hicv-cn.github.io/hicv-word-resume-templates/categories/minimalist-single-page/)
+- [表格 Word 简历模板](https://hicv-cn.github.io/hicv-word-resume-templates/categories/table-resume/)
+- [职业岗位 Word 简历模板](https://hicv-cn.github.io/hicv-word-resume-templates/categories/professional-resume/)
+- [行业专属 Word 简历模板](https://hicv-cn.github.io/hicv-word-resume-templates/categories/industry-resume/)
+- [英文 Word 简历模板](https://hicv-cn.github.io/hicv-word-resume-templates/categories/english-resume/)
+- [研究生复试 Word 简历模板](https://hicv-cn.github.io/hicv-word-resume-templates/categories/postgraduate-interview/)
 
 ## 模板分类
 
@@ -51,16 +54,19 @@
 
 ## 使用方式
 
-1. 打开 [templates](./templates) 目录。
-2. 按风格、行业、页数选择合适的 `.docx` 文件。
+1. 进入 [模板文件目录](./templates) 或 [完整模板索引](./TEMPLATE_INDEX.md)。
+2. 按风格、行业和页数选择 `.docx` 文件。
 3. 下载后用 Word 或 WPS 修改个人信息、教育经历、实习经历和项目经历。
-4. 投递前导出 PDF，避免不同设备打开时排版变化。
-5. 转发或二次整理时请保留 HICV.cn 来源信息。
+4. 投递前导出 PDF，避免不同设备打开时出现排版变化。
 
-## 关于 HICV
+需要在线套用模板、检查经历表达或根据目标岗位优化内容，可进入 [HICV 在线简历模板](https://hicv.cn/templates?utm_source=github&utm_medium=referral&utm_campaign=word_resume_templates&utm_content=readme_bottom)。
 
-[HICV.cn](https://hicv.cn) 提供 AI 简历生成、在线简历模板、简历范文、真实面经、校招信息等求职工具，帮助应届生和职场人更快完成高质量简历。
+## 更新与反馈
+
+- 版本更新见 [Releases](https://github.com/HICV-CN/hicv-word-resume-templates/releases)。
+- 模板目录由 `scripts/generate-site.mjs` 统一生成，站点与索引会保持同步。
+- 如有模板分类或文件问题，请提交 [Issue](https://github.com/HICV-CN/hicv-word-resume-templates/issues)。
 
 ## 授权说明
 
-模板可免费使用和转发，请保留 [HICV.cn](https://hicv.cn) 来源信息。详见 [LICENSE](./LICENSE)。
+模板可免费使用和转发，请保留 [HICV.cn](https://hicv.cn?utm_source=github&utm_medium=referral&utm_campaign=word_resume_templates&utm_content=readme_license) 来源信息。详见 [LICENSE](./LICENSE)。
