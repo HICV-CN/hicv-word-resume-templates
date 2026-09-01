@@ -234,7 +234,7 @@ button, input { font: inherit; }
 .site-nav .inner { min-height: 66px; display: flex; align-items: center; justify-content: space-between; gap: 28px; }
 .brand { display: inline-flex; align-items: center; gap: 10px; color: var(--ink); font-size: 16px; font-weight: 760; }
 .brand:hover { text-decoration: none; }
-.brand-mark { display: grid; width: 32px; height: 32px; place-items: center; border-radius: 7px; background: var(--ink); color: white; font-size: 14px; font-weight: 800; }
+.brand-mark { display: grid; width: 46px; height: 32px; place-items: center; border-radius: 7px; background: var(--ink); color: white; font-size: 11px; font-weight: 850; letter-spacing: -0.35px; }
 .nav-links { display: flex; align-items: center; gap: 24px; font-size: 14px; font-weight: 600; }
 .nav-links a { color: #475467; }
 .nav-links .nav-cta { color: var(--brand); }
@@ -390,7 +390,7 @@ function repoFileUrl(file) {
 
 function navHtml(prefix = "") {
   return `<nav class="site-nav"><div class="inner">
-    <a class="brand" href="${prefix}index.html"><span class="brand-mark">H</span><span>HICV Word 简历模板库</span></a>
+    <a class="brand" href="${prefix}index.html"><span class="brand-mark">HICV</span><span>HICV Word 简历模板库</span></a>
     <div class="nav-links">
       <a href="${prefix}index.html#previews">精选预览</a>
       <a href="${prefix}index.html#categories">模板分类</a>
@@ -425,6 +425,7 @@ function pageShell({ title, description, canonical, body, prefix = "", schema })
   <meta property="og:image" content="${pagesUrl}/assets/social-preview.png">
   <meta property="og:image:width" content="1280">
   <meta property="og:image:height" content="640">
+  <link rel="icon" type="image/svg+xml" href="${prefix}assets/favicon.svg">
   <link rel="stylesheet" href="${prefix}assets/site.css">
   <script type="application/ld+json">${JSON.stringify(schema)}</script>
 </head>
