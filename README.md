@@ -32,6 +32,17 @@
 - [英文 Word 简历模板](https://hicv-cn.github.io/hicv-word-resume-templates/categories/english-resume/)
 - [研究生复试 Word 简历模板](https://hicv-cn.github.io/hicv-word-resume-templates/categories/postgraduate-interview/)
 
+## 求职场景专题
+
+以下专题页复用仓库现有模板，按搜索场景重新整理，适合秋招、实习和热门岗位快速筛选：
+
+- [秋招校招 Word 简历模板](https://hicv-cn.github.io/hicv-word-resume-templates/categories/campus-recruitment/)
+- [实习与应届生 Word 简历模板](https://hicv-cn.github.io/hicv-word-resume-templates/categories/internship-entry-level/)
+- [教师教育行业 Word 简历模板](https://hicv-cn.github.io/hicv-word-resume-templates/categories/teacher-resume/)
+- [金融财务 Word 简历模板](https://hicv-cn.github.io/hicv-word-resume-templates/categories/finance-resume/)
+- [设计视觉 Word 简历模板](https://hicv-cn.github.io/hicv-word-resume-templates/categories/design-resume/)
+- [技术开发 Word 简历模板](https://hicv-cn.github.io/hicv-word-resume-templates/categories/technology-resume/)
+
 ## 模板分类
 
 | 分类 | 适用场景 | 数量 |
