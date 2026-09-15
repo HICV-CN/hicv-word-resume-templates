@@ -56,7 +56,7 @@ p { color: var(--muted); }
 .band { padding: 60px 0; border-bottom: 1px solid var(--line-soft); }
 .band.alt { background: var(--surface); }
 .feature-demo { padding: 56px 0; border-top: 1px solid var(--line-soft); border-bottom: 1px solid var(--line-soft); background: linear-gradient(180deg, #fbfcff 0%, #f6f8fb 100%); }
-.feature-demo .inner { width: min(100% - 36px, 1280px); display: grid; grid-template-columns: minmax(280px, 0.72fr) minmax(620px, 1.28fr); gap: 36px; align-items: center; }
+.feature-demo .inner { width: min(100% - 36px, 1280px); display: grid; grid-template-columns: minmax(0, 0.72fr) minmax(0, 1.28fr); gap: 36px; align-items: center; }
 .feature-copy { max-width: 500px; }
 .feature-copy h2 { font-size: 34px; }
 .feature-copy p { margin: 0; }

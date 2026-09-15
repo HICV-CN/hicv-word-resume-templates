@@ -1,5 +1,6 @@
 import { promises as fs } from "node:fs";
 import path from "node:path";
+import { createHash } from "node:crypto";
 
 const root = process.cwd();
 const templatesDir = path.join(root, "templates");
@@ -260,7 +261,7 @@ p { color: var(--muted); }
 .band { padding: 60px 0; border-bottom: 1px solid var(--line-soft); }
 .band.alt { background: var(--surface); }
 .feature-demo { padding: 56px 0; border-top: 1px solid var(--line-soft); border-bottom: 1px solid var(--line-soft); background: linear-gradient(180deg, #fbfcff 0%, #f6f8fb 100%); }
-.feature-demo .inner { width: min(100% - 36px, 1280px); display: grid; grid-template-columns: minmax(280px, 0.72fr) minmax(620px, 1.28fr); gap: 36px; align-items: center; }
+.feature-demo .inner { width: min(100% - 36px, 1280px); display: grid; grid-template-columns: minmax(0, 0.72fr) minmax(0, 1.28fr); gap: 36px; align-items: center; }
 .feature-copy { max-width: 500px; }
 .feature-copy h2 { font-size: 34px; }
 .feature-copy p { margin: 0; }
@@ -445,7 +446,7 @@ function pageShell({ title, description, canonical, body, prefix = "", schema })
   <meta property="og:image:width" content="1280">
   <meta property="og:image:height" content="640">
   <link rel="icon" type="image/png" href="${prefix}assets/hicv-logo.png">
-  <link rel="stylesheet" href="${prefix}assets/site.css">
+  <link rel="stylesheet" href="${prefix}assets/site.css?v=${createHash("sha256").update(siteCss).digest("hex").slice(0, 12)}">
   <script type="application/ld+json">${JSON.stringify(schema)}</script>
 </head>
 <body>
@@ -529,7 +530,7 @@ const homeBody = `<header class="hero"><div class="inner">
       <div class="actions"><a class="button primary" href="${hicvUrl("home_baibian_cta")}">去试试百变模板</a><a class="button" href="${baibianVideoUrl}">打开演示视频</a></div>
     </div>
     <div class="demo-frame">
-      <video src="${baibianVideoUrl}" width="1944" height="1080" muted autoplay loop playsinline controls preload="metadata" aria-label="HICV 百变模板功能演示视频"></video>
+      <video src="${baibianVideoUrl}" width="900" height="500" muted autoplay loop playsinline controls preload="metadata" aria-label="HICV 百变模板功能演示视频"></video>
       <div class="demo-caption"><strong>百变模板演示</strong><span>在 HICV 模板列表页进入，可组合头部、模块、配色与背景。</span></div>
     </div>
   </div></section>
