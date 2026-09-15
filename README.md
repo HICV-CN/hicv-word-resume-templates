@@ -6,6 +6,12 @@
 
 **[在线浏览模板并制作简历](https://hicv.cn/templates?utm_source=github&utm_medium=referral&utm_campaign=word_resume_templates&utm_content=readme_primary)** · [查看完整模板索引](./TEMPLATE_INDEX.md) · [打开模板文件目录](./templates)
 
+## 新功能：百变模板
+
+HICV.cn 模板列表页已上线百变模板功能，可自由组合简历头部布局、模块样式、主题配色和页面背景。用同一份简历内容，就能快速切换简约清爽、正式商务等不同投递风格。
+
+**[试试 HICV 百变模板](https://hicv.cn/templates?utm_source=github&utm_medium=referral&utm_campaign=word_resume_templates&utm_content=readme_baibian_template)** · [查看演示视频](https://prod-oss.hicv.cn/template/baibian-video-900-30fps.mp4)
+
 ## 真实模板预览
 
 以下图片由仓库中的 DOCX 文件直接渲染。点击图片可查看对应文件。

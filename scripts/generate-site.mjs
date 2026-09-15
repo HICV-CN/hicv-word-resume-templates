@@ -7,6 +7,7 @@ const docsDir = path.join(root, "docs");
 const repoUrl = "https://github.com/HICV-CN/hicv-word-resume-templates";
 const pagesUrl = "https://hicv-cn.github.io/hicv-word-resume-templates";
 const updatedAt = "2026-09-01";
+const baibianVideoUrl = "https://prod-oss.hicv.cn/template/baibian-video-900-30fps.mp4";
 
 const categoryDescriptions = new Map([
   ["01_表格简历", "传统表格式简历，适合信息密度高、格式稳妥的中文求职场景。"],
@@ -258,6 +259,18 @@ p { color: var(--muted); }
 .stat strong { color: var(--ink); font-size: 25px; line-height: 1.2; }
 .band { padding: 60px 0; border-bottom: 1px solid var(--line-soft); }
 .band.alt { background: var(--surface); }
+.feature-demo { padding: 56px 0; border-top: 1px solid var(--line-soft); border-bottom: 1px solid var(--line-soft); background: linear-gradient(180deg, #fbfcff 0%, #f6f8fb 100%); }
+.feature-demo .inner { display: grid; grid-template-columns: minmax(0, 0.92fr) minmax(420px, 1.08fr); gap: 44px; align-items: center; }
+.feature-copy { max-width: 560px; }
+.feature-copy h2 { font-size: 34px; }
+.feature-copy p { margin: 0; }
+.feature-copy .actions { margin-top: 24px; }
+.feature-points { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin: 22px 0 0; }
+.feature-point { padding: 12px 14px; border: 1px solid var(--line-soft); border-radius: 8px; background: white; color: #344054; font-size: 13px; font-weight: 700; }
+.demo-frame { overflow: hidden; border: 1px solid var(--line); border-radius: 8px; background: #111827; box-shadow: 0 18px 42px rgba(24, 34, 48, 0.14); }
+.demo-frame video { width: 100%; aspect-ratio: 16 / 9; background: #111827; object-fit: cover; }
+.demo-caption { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 12px 14px; color: #d0d5dd; font-size: 12px; }
+.demo-caption strong { color: white; font-size: 13px; }
 .section-head { display: flex; align-items: end; justify-content: space-between; gap: 24px; margin-bottom: 28px; }
 .section-intro { max-width: 700px; margin: 0; }
 .text-link { flex: 0 0 auto; font-size: 14px; font-weight: 700; }
@@ -306,6 +319,7 @@ footer p { margin: 0; color: #d0d5dd; font-size: 13px; }
   .preview-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   h1 { font-size: 44px; }
   .resource-list { grid-template-columns: 1fr; }
+  .feature-demo .inner { grid-template-columns: 1fr; }
   .category { grid-template-columns: 38px minmax(0, 1fr); }
   .category-link { grid-column: 2; }
 }
@@ -324,6 +338,10 @@ footer p { margin: 0; color: #d0d5dd; font-size: 13px; }
   .stat { min-height: 68px; padding: 12px 0; border-right: 0; border-bottom: 1px solid var(--line); }
   .stat:last-child { border-bottom: 0; }
   .band { padding: 44px 0; }
+  .feature-demo { padding: 44px 0; }
+  .feature-copy h2 { font-size: 28px; }
+  .feature-points { grid-template-columns: 1fr; }
+  .demo-caption { align-items: flex-start; flex-direction: column; gap: 4px; }
   .section-head { align-items: flex-start; flex-direction: column; gap: 8px; margin-bottom: 22px; }
   .preview-grid, .preview-grid.compact { grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: minmax(278px, 84vw); overflow-x: auto; margin-right: -14px; padding: 0 14px 10px 0; scroll-snap-type: x mandatory; }
   .preview-grid { scrollbar-width: none; }
@@ -393,6 +411,7 @@ function navHtml(prefix = "") {
     <a class="brand" href="${prefix}index.html"><img class="brand-logo" src="${prefix}assets/hicv-logo.png" alt="HICV"><span>HICV Word 简历模板库</span></a>
     <div class="nav-links">
       <a href="${prefix}index.html#previews">精选预览</a>
+      <a href="${prefix}index.html#baibian">百变模板</a>
       <a href="${prefix}index.html#categories">模板分类</a>
       <a href="${prefix}index.html#scenarios">求职场景</a>
       <a href="${repoUrl}/blob/main/TEMPLATE_INDEX.md">完整索引</a>
@@ -501,6 +520,19 @@ const homeBody = `<header class="hero"><div class="inner">
   <div class="stats"><div class="stat"><strong>${files.length.toLocaleString("zh-CN")}</strong><span>套可编辑 DOCX</span></div><div class="stat"><strong>${grouped.size}</strong><span>个资源分类</span></div><div class="stat"><strong>Word / WPS</strong><span>下载后直接编辑</span></div></div>
 </div></header>
 <main>
+  <section class="feature-demo" id="baibian"><div class="inner">
+    <div class="feature-copy">
+      <p class="eyebrow">NEW · HICV 百变模板</p>
+      <h2>一份简历内容，快速换出不同投递风格</h2>
+      <p class="lead">百变模板支持自由组合头部布局与模块样式，细调主题配色和页面背景。从简约清爽到正式商务，用同一份内容搭出更适合岗位和行业的简历版式。</p>
+      <div class="feature-points"><span class="feature-point">头部布局可切换</span><span class="feature-point">模块样式可组合</span><span class="feature-point">主题配色可细调</span><span class="feature-point">适合国内投递场景</span></div>
+      <div class="actions"><a class="button primary" href="${hicvUrl("home_baibian_cta")}">去试试百变模板</a><a class="button" href="${baibianVideoUrl}">打开演示视频</a></div>
+    </div>
+    <div class="demo-frame">
+      <video src="${baibianVideoUrl}" width="1944" height="1080" muted autoplay loop playsinline controls preload="metadata" aria-label="HICV 百变模板功能演示视频"></video>
+      <div class="demo-caption"><strong>百变模板演示</strong><span>在 HICV 模板列表页进入，可组合头部、模块、配色与背景。</span></div>
+    </div>
+  </div></section>
   <section class="band alt" id="previews"><div class="inner"><div class="section-head"><div><h2>精选模板预览</h2><p class="section-intro">全部由仓库中的真实 DOCX 直接渲染，保持原始版式比例，不使用示意图。</p></div><a class="text-link" href="${repoUrl}/tree/main/templates">浏览全部文件 →</a></div>${previewGrid(previewItems.filter((item) => item.featured !== false))}</div></section>
   <section class="band" id="categories"><div class="inner"><div class="section-head"><div><h2>按模板类型选择</h2><p class="section-intro">从访问量最高的单页、表格和岗位模板开始，减少在 2,132 个文件中反复查找。</p></div></div><div class="category-grid">${categoryCards}</div></div></section>
   <section class="band alt" id="scenarios"><div class="inner"><div class="section-head"><div><h2>按求职场景选择</h2><p class="section-intro">围绕秋招、实习和热门行业整理现有模板，方便直接进入更具体的搜索入口。</p></div></div><div class="category-grid">${scenarioCards}</div></div></section>
@@ -509,20 +541,32 @@ const homeBody = `<header class="hero"><div class="inner">
 </main>`;
 
 const homeHtml = pageShell({
-  title: "Word 简历模板免费下载_中文个人简历模板库_HICV",
-  description: `HICV 整理 ${files.length} 套可编辑 Word 简历模板，覆盖简约单页、表格简历、行业岗位、英文简历和研究生复试等求职场景。`,
+  title: "Word 简历模板免费下载_百变模板与中文个人简历模板库_HICV",
+  description: `HICV 整理 ${files.length} 套可编辑 Word 简历模板，支持百变模板在线组合头部、模块、配色与背景，覆盖简约单页、表格简历、行业岗位、英文简历和研究生复试等求职场景。`,
   canonical: `${pagesUrl}/`,
   body: homeBody,
   schema: {
     "@context": "https://schema.org",
-    "@type": "Dataset",
-    name: "HICV Word 简历模板库",
-    description: `HICV 整理的 ${files.length} 套可编辑 Word 简历模板。`,
-    url: `${pagesUrl}/`,
-    dateModified: updatedAt,
-    keywords: ["Word 简历模板", "秋招简历", "校招简历", "实习简历", "行业简历"],
-    creator: { "@type": "Organization", name: "HICV.cn", url: "https://hicv.cn" },
-    license: `${repoUrl}/blob/main/LICENSE`,
+    "@graph": [
+      {
+        "@type": "Dataset",
+        name: "HICV Word 简历模板库",
+        description: `HICV 整理的 ${files.length} 套可编辑 Word 简历模板，包含百变模板在线组合入口。`,
+        url: `${pagesUrl}/`,
+        dateModified: updatedAt,
+        keywords: ["Word 简历模板", "百变模板", "秋招简历", "校招简历", "实习简历", "行业简历"],
+        creator: { "@type": "Organization", name: "HICV.cn", url: "https://hicv.cn" },
+        license: `${repoUrl}/blob/main/LICENSE`,
+      },
+      {
+        "@type": "VideoObject",
+        name: "HICV 百变模板功能演示",
+        description: "演示 HICV 百变模板如何自由组合简历头部布局、模块样式、主题配色和页面背景。",
+        contentUrl: baibianVideoUrl,
+        uploadDate: "2026-09-15",
+        publisher: { "@type": "Organization", name: "HICV.cn", url: "https://hicv.cn" },
+      },
+    ],
   },
 });
 
