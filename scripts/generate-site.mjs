@@ -1,13 +1,14 @@
 import { promises as fs } from "node:fs";
 import path from "node:path";
 import { createHash } from "node:crypto";
+import { guides } from "./guide-content.mjs";
 
 const root = process.cwd();
 const templatesDir = path.join(root, "templates");
 const docsDir = path.join(root, "docs");
 const repoUrl = "https://github.com/HICV-CN/hicv-word-resume-templates";
 const pagesUrl = "https://hicv-cn.github.io/hicv-word-resume-templates";
-const updatedAt = "2026-09-01";
+const updatedAt = "2026-10-14";
 const baibianVideoUrl = "https://prod-oss.hicv.cn/template/baibian-video-900-30fps.mp4";
 
 const categoryDescriptions = new Map([
@@ -81,7 +82,7 @@ const landingCategories = [
     prefix: "templates/12_研究生复试/",
     description: "包含复试单页简历、多页科研简历和调剂申请表，适合考研复试准备。",
     searchTerms: "考研复试简历模板、研究生简历、调剂申请表",
-    hicvPath: "/templates/category/baoyan",
+    hicvPath: "/templates/category/kaoyanfushi",
   },
 ];
 
@@ -95,7 +96,7 @@ const scenarioCategories = [
     shortTitle: "秋招 / 校招",
     description: "面向应届生、校园招聘和秋季求职的一页式 Word 简历模板，优先突出教育背景、项目经历和实习经历。",
     searchTerms: "秋招简历模板、校招简历模板、应届生简历、校园招聘简历",
-    hicvPath: "/templates",
+    hicvPath: "/templates/category/xiaozhao",
     filter: (file) => {
       const fileRel = rel(file);
       return /单页/.test(fileRel) && /^(templates\/(01_表格简历|02_简约简历|04_活泼明朗|05_简约优雅|07_稳重大气|08_职业风格|09_行业专属|10_小红书风格)\/)/.test(fileRel);
@@ -107,7 +108,7 @@ const scenarioCategories = [
     shortTitle: "实习 / 应届生",
     description: "适合第一份实习、应届生求职和经历较少的候选人，用清晰版式呈现课程、项目、社团与实践经历。",
     searchTerms: "实习简历模板、应届生简历模板、大学生简历、无经验简历",
-    hicvPath: "/templates",
+    hicvPath: "/templates/category/shixisheng",
     filter: (file) => {
       const fileRel = rel(file);
       return /实习|应届/.test(fileRel) || /templates\/(04_活泼明朗|10_小红书风格)\//.test(fileRel);
@@ -219,6 +220,8 @@ const siteCss = `:root {
 }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
+[id] { scroll-margin-top: 88px; }
+[hidden] { display: none !important; }
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
@@ -237,7 +240,7 @@ button, input { font: inherit; }
 .brand { display: inline-flex; align-items: center; gap: 10px; color: var(--ink); font-size: 16px; font-weight: 760; }
 .brand:hover { text-decoration: none; }
 .brand-logo { width: 36px; height: 36px; flex: 0 0 36px; object-fit: contain; }
-.nav-links { display: flex; align-items: center; gap: 24px; font-size: 14px; font-weight: 600; }
+.nav-links { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 20px; font-size: 14px; font-weight: 600; }
 .nav-links a { color: #475467; }
 .nav-links .nav-cta { color: var(--brand); }
 .hero { padding: 64px 0 0; background: white; }
@@ -253,6 +256,21 @@ p { color: var(--muted); }
 .button:hover { border-color: #98a2b3; text-decoration: none; }
 .button.primary { border-color: var(--brand); background: var(--brand); color: white; }
 .button.primary:hover { background: var(--brand-dark); text-decoration: none; }
+button.button { cursor: pointer; }
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+.quick-links { display: flex; flex-wrap: wrap; gap: 12px 24px; margin-top: 22px; font-size: 14px; }
+.guide-list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; }
+.guide-item { padding-top: 18px; border-top: 2px solid var(--accent); }
+.guide-item p { margin: 12px 0; font-size: 14px; }
+.reading { max-width: 800px; }
+.reading section + section { margin-top: 36px; }
+.reading h2 { font-size: 26px; }
+.reading li { margin: 10px 0; }
+.reading blockquote { margin: 20px 0; padding: 12px 20px; border-left: 3px solid var(--accent); background: var(--surface); }
+.reading blockquote p { margin: 0; }
+.reading p, .reading li { overflow-wrap: anywhere; }
+.guide-toc { display: flex; flex-wrap: wrap; gap: 10px 22px; margin-top: 24px; }
+.updated { font-size: 13px; }
 .stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .stat { min-height: 94px; display: flex; flex-direction: column; justify-content: center; padding: 16px 28px; border-right: 1px solid var(--line); color: var(--muted); font-size: 13px; }
 .stat:first-child { padding-left: 0; }
@@ -317,6 +335,9 @@ footer p { margin: 0; color: #d0d5dd; font-size: 13px; }
 .footer-links { display: flex; gap: 18px; font-size: 13px; }
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
 @media (max-width: 900px) {
+  .guide-list { grid-template-columns: 1fr; }
+  .site-nav .inner { align-items: flex-start; flex-direction: column; gap: 12px; padding: 12px 0; }
+  .site-nav { position: static; }
   .preview-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   h1 { font-size: 44px; }
   .resource-list { grid-template-columns: 1fr; }
@@ -404,7 +425,19 @@ function hicvUrl(content, source = "github_pages", pathname = "/templates") {
 }
 
 function repoFileUrl(file) {
-  return `${repoUrl}/blob/main/${encodeURI(file)}`;
+  return `${repoUrl}/blob/main/${file.split("/").map(encodeURIComponent).join("/")}`;
+}
+
+function downloadUrl(file) {
+  return `https://raw.githubusercontent.com/HICV-CN/hicv-word-resume-templates/main/${file.split("/").map(encodeURIComponent).join("/")}`;
+}
+
+function guideLinks(selectedGuides = guides, prefix = "") {
+  return `<div class="guide-list">${selectedGuides.map((guide) => `<article class="guide-item"><h3><a href="${prefix}guides/${guide.slug}/">${escapeHtml(guide.shortTitle)}</a></h3><p>${escapeHtml(guide.description)}</p><a class="text-link" href="${prefix}guides/${guide.slug}/">阅读全文 →</a></article>`).join("")}</div>`;
+}
+
+function resourceBrowser(resourceFiles) {
+  return `<div data-resource-browser><div class="resource-toolbar"><label class="sr-only" for="resource-search">搜索模板名称、分类或岗位</label><input id="resource-search" class="resource-search" data-resource-search type="search" placeholder="搜索名称、分类或岗位，如：会计 单页"><p class="resource-summary" role="status">找到 <strong data-resource-count>${resourceFiles.length}</strong> 套，已显示 <strong data-resource-shown>${resourceFiles.length}</strong> 套</p></div><div class="resource-list">${resourceFiles.map((file, index) => `<div class="resource-row" data-resource-row data-search="${escapeHtml(rel(file))}"><span class="resource-number">${index + 1}</span><span class="resource-name">${escapeHtml(titleFromFile(file))}<span class="preview-meta">${escapeHtml(categoryFromFile(file).replace(/^\d+_/, ""))} · <a href="${repoFileUrl(rel(file))}" aria-label="查看 ${escapeHtml(titleFromFile(file))} GitHub 文件页">GitHub 文件页</a></span></span><a href="${downloadUrl(rel(file))}" aria-label="下载 ${escapeHtml(titleFromFile(file))} DOCX">下载 DOCX</a></div>`).join("")}</div><p data-resource-empty hidden>没有匹配的模板，试试减少关键词或搜索岗位名称。</p><div class="actions"><button class="button" type="button" data-resource-more hidden>再显示 60 套</button></div></div>`;
 }
 
 function navHtml(prefix = "") {
@@ -415,7 +448,8 @@ function navHtml(prefix = "") {
       <a href="${prefix}index.html#baibian">百变模板</a>
       <a href="${prefix}index.html#categories">模板分类</a>
       <a href="${prefix}index.html#scenarios">求职场景</a>
-      <a href="${repoUrl}/blob/main/TEMPLATE_INDEX.md">完整索引</a>
+      <a href="${prefix}catalog/">搜索模板</a>
+      <a href="${prefix}index.html#guides">简历指南</a>
       <a class="nav-cta" href="${hicvUrl("nav_online_templates")}">在线制作简历</a>
     </div>
   </div></nav>`;
@@ -428,7 +462,7 @@ function previewGrid(items, assetPrefix = "", compact = false) {
   </figure>`).join("")}</div>`;
 }
 
-function pageShell({ title, description, canonical, body, prefix = "", schema }) {
+function pageShell({ title, description, canonical, body, prefix = "", schema, ogType = "website" }) {
   return `<!doctype html>
 <html lang="zh-CN">
 <head>
@@ -439,7 +473,7 @@ function pageShell({ title, description, canonical, body, prefix = "", schema })
   <link rel="canonical" href="${canonical}">
   <meta property="og:title" content="${escapeHtml(title)}">
   <meta property="og:description" content="${escapeHtml(description)}">
-  <meta property="og:type" content="website">
+  <meta property="og:type" content="${ogType}">
   <meta property="og:url" content="${canonical}">
   <meta property="og:updated_time" content="${updatedAt}T00:00:00+08:00">
   <meta property="og:image" content="${pagesUrl}/assets/social-preview.png">
@@ -454,18 +488,30 @@ function pageShell({ title, description, canonical, body, prefix = "", schema })
   ${body}
   <footer><div class="inner"><p>由 <a href="${hicvUrl("footer_brand")}">HICV.cn</a> 整理维护 · 2,132 套真实可编辑 Word 简历模板</p><div class="footer-links"><a href="${repoUrl}">GitHub 仓库</a><a href="${repoUrl}/releases">精选下载</a></div></div></footer>
   <script>
-    document.querySelectorAll("[data-resource-search]").forEach((input) => {
-      const rows = [...document.querySelectorAll("[data-resource-row]")];
-      const count = document.querySelector("[data-resource-count]");
-      input.addEventListener("input", () => {
-        const keyword = input.value.trim().toLocaleLowerCase();
-        let visible = 0;
+    document.querySelectorAll("[data-resource-browser]").forEach((browser) => {
+      const input = browser.querySelector("[data-resource-search]");
+      const rows = [...browser.querySelectorAll("[data-resource-row]")];
+      const count = browser.querySelector("[data-resource-count]");
+      const shown = browser.querySelector("[data-resource-shown]");
+      const more = browser.querySelector("[data-resource-more]");
+      const empty = browser.querySelector("[data-resource-empty]");
+      let limit = 60;
+      function render() {
+        const keywords = input.value.trim().toLocaleLowerCase().split(/\\s+/).filter(Boolean);
+        let matched = 0;
         rows.forEach((row) => {
-          row.hidden = keyword !== "" && !row.textContent.toLocaleLowerCase().includes(keyword);
-          if (!row.hidden) visible += 1;
+          const matches = keywords.every((word) => row.dataset.search.toLocaleLowerCase().includes(word));
+          if (matches) matched += 1;
+          row.hidden = !matches || matched > limit;
         });
-        if (count) count.textContent = visible;
-      });
+        count.textContent = matched;
+        shown.textContent = Math.min(matched, limit);
+        more.hidden = matched <= limit;
+        empty.hidden = matched !== 0;
+      }
+      input.addEventListener("input", () => { limit = 60; render(); });
+      more.addEventListener("click", () => { limit += 60; render(); });
+      render();
     });
   </script>
 </body>
@@ -506,24 +552,25 @@ const categoryCards = categoryCardsFor(landingCategories);
 const scenarioCards = categoryCardsFor(scenarioCategories, landingCategories.length);
 
 const featuredFiles = landingCategories.flatMap((category) => files.filter((file) => rel(file).startsWith(category.prefix)).slice(0, 4));
-const homeRows = featuredFiles.slice(0, 12).map((file, index) => `<div class="resource-row"><span class="resource-number">${String(index + 1).padStart(2, "0")}</span><span class="resource-name">${escapeHtml(titleFromFile(file))}</span><a href="${repoFileUrl(rel(file))}">下载 →</a></div>`).join("");
+const homeRows = featuredFiles.slice(0, 12).map((file, index) => `<div class="resource-row"><span class="resource-number">${String(index + 1).padStart(2, "0")}</span><span class="resource-name">${escapeHtml(titleFromFile(file))}</span><a href="${downloadUrl(rel(file))}">下载 DOCX</a></div>`).join("");
 
 const homeBody = `<header class="hero"><div class="inner">
   <div class="hero-copy">
-    <p class="eyebrow">免费 Word 模板库 · 2026 秋招更新</p>
+    <p class="eyebrow">免费 Word 模板库 · 2026 年 10 月更新</p>
     <h1>Word 简历模板，先看版式再下载</h1>
     <p class="lead">2,132 套真实可编辑 DOCX，覆盖简约单页、表格简历、秋招校招、实习应届、热门行业和英文简历。预览满意后直接下载，也可以进入 HICV 在线制作。</p>
     <div class="actions">
       <a class="button primary" href="${hicvUrl("home_primary_cta")}">在线浏览并制作简历</a>
-      <a class="button" href="${repoUrl}/releases/tag/v2026.08">下载秋招精选包</a>
+      <a class="button" href="catalog/">搜索全部 ${files.length} 套 Word 模板</a>
     </div>
+    <div class="quick-links"><a href="guides/campus-resume-checklist/">2027 届秋招投递检查</a><a href="guides/resume-without-internship/">没有实习经历怎么写</a><a href="guides/word-resume-pdf-checklist/">Word 转 PDF 检查</a></div>
   </div>
   <div class="stats"><div class="stat"><strong>${files.length.toLocaleString("zh-CN")}</strong><span>套可编辑 DOCX</span></div><div class="stat"><strong>${grouped.size}</strong><span>个资源分类</span></div><div class="stat"><strong>Word / WPS</strong><span>下载后直接编辑</span></div></div>
 </div></header>
 <main>
   <section class="feature-demo" id="baibian"><div class="inner">
     <div class="feature-copy">
-      <p class="eyebrow">NEW · HICV 百变模板</p>
+      <p class="eyebrow">HICV 百变模板</p>
       <h2>一份简历内容，快速换出不同投递风格</h2>
       <p class="lead">百变模板支持自由组合头部布局与模块样式，细调主题配色和页面背景。从简约清爽到正式商务，用同一份内容搭出更适合岗位和行业的简历版式。</p>
       <div class="feature-points"><span class="feature-point">头部布局可切换</span><span class="feature-point">模块样式可组合</span><span class="feature-point">主题配色可细调</span><span class="feature-point">适合国内投递场景</span></div>
@@ -535,22 +582,23 @@ const homeBody = `<header class="hero"><div class="inner">
     </div>
   </div></section>
   <section class="band alt" id="previews"><div class="inner"><div class="section-head"><div><h2>精选模板预览</h2><p class="section-intro">全部由仓库中的真实 DOCX 直接渲染，保持原始版式比例，不使用示意图。</p></div><a class="text-link" href="${repoUrl}/tree/main/templates">浏览全部文件 →</a></div>${previewGrid(previewItems.filter((item) => item.featured !== false))}</div></section>
-  <section class="band" id="categories"><div class="inner"><div class="section-head"><div><h2>按模板类型选择</h2><p class="section-intro">从访问量最高的单页、表格和岗位模板开始，减少在 2,132 个文件中反复查找。</p></div></div><div class="category-grid">${categoryCards}</div></div></section>
+  <section class="band" id="categories"><div class="inner"><div class="section-head"><div><h2>按模板类型选择</h2><p class="section-intro">按页数、版式和岗位选择，找到适合自己经历长度的模板。</p></div></div><div class="category-grid">${categoryCards}</div></div></section>
   <section class="band alt" id="scenarios"><div class="inner"><div class="section-head"><div><h2>按求职场景选择</h2><p class="section-intro">围绕秋招、实习和热门行业整理现有模板，方便直接进入更具体的搜索入口。</p></div></div><div class="category-grid">${scenarioCards}</div></div></section>
-  <section class="band alt"><div class="inner"><div class="section-head"><div><h2>近期热门下载</h2><p class="section-intro">先列出 12 个高频入口；完整清单仍保留在仓库索引中。</p></div><a class="text-link" href="${repoUrl}/blob/main/TEMPLATE_INDEX.md">打开完整索引 →</a></div><div class="resource-list">${homeRows}</div></div></section>
+  <section class="band" id="guides"><div class="inner"><div class="section-head"><div><h2>简历写作与投递指南</h2><p class="section-intro">从真实经历到可投递的文件，把下载模板后的几步也准备好。</p></div></div>${guideLinks()}</div></section>
+  <section class="band alt"><div class="inner"><div class="section-head"><div><h2>Word 模板快速下载</h2><p class="section-intro">从简约、表格与职业分类中选取的 12 份模板。</p></div><a class="text-link" href="catalog/">搜索完整模板库 →</a></div><div class="resource-list">${homeRows}</div></div></section>
   <section class="conversion"><div class="inner"><div><h2>选好版式，继续把内容写到位</h2><p>在 HICV 在线套用模板，按目标岗位调整经历顺序、关键词和成果表达。</p></div><div class="actions"><a class="button primary" href="${hicvUrl("home_bottom_cta")}">在线制作简历</a><a class="button" href="${repoUrl}/releases">下载精选包</a></div></div></section>
 </main>`;
 
 const homeHtml = pageShell({
-  title: "Word 简历模板免费下载_百变模板与中文个人简历模板库_HICV",
-  description: `HICV 整理 ${files.length} 套可编辑 Word 简历模板，支持百变模板在线组合头部、模块、配色与背景，覆盖简约单页、表格简历、行业岗位、英文简历和研究生复试等求职场景。`,
+  title: "Word 简历模板免费下载_2027届秋招与应届生简历_HICV",
+  description: `免费搜索 ${files.length} 套 Word 简历模板，覆盖校招、实习、行业岗位与英文简历。2026 年 10 月更新：2027 届秋招检查清单、无实习经历写法、Word 排版与 PDF 导出指南，也可进入 HICV 在线制作。`,
   canonical: `${pagesUrl}/`,
   body: homeBody,
   schema: {
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "Dataset",
+        "@type": "CollectionPage",
         name: "HICV Word 简历模板库",
         description: `HICV 整理的 ${files.length} 套可编辑 Word 简历模板，包含百变模板在线组合入口。`,
         url: `${pagesUrl}/`,
@@ -582,13 +630,11 @@ for (const category of allLandingCategories) {
   const previewSection = categoryPreviews.length > 0
     ? `<section class="band alt"><div class="inner"><div class="section-head"><div><h2>真实模板预览</h2><p class="section-intro">预览由对应 DOCX 原文件生成，点击可在 GitHub 查看和下载。</p></div></div>${previewGrid(categoryPreviews, "../../", true)}</div></section>`
     : "";
-  const visibleFiles = categoryFiles.slice(0, 60);
-  const rows = visibleFiles.map((file, index) => `<div class="resource-row" data-resource-row><span class="resource-number">${String(index + 1).padStart(2, "0")}</span><span class="resource-name">${escapeHtml(titleFromFile(file))}</span><a href="${repoFileUrl(rel(file))}">下载 →</a></div>`).join("");
   const categoryDirectoryUrl = category.prefix
     ? `${repoUrl}/tree/main/${encodeURI(category.prefix.replace(/\/$/, ""))}`
     : `${repoUrl}/tree/main/templates`;
-  const body = `<header class="hero"><div class="inner"><p class="breadcrumbs"><a href="../../index.html">模板库首页</a> / ${category.shortTitle}</p><div class="hero-copy"><p class="eyebrow">HICV 求职模板专题</p><h1>${category.title}</h1><p class="lead">${category.description}</p><p class="search-terms">常见搜索：${category.searchTerms}</p><div class="actions"><a class="button primary" href="${hicvUrl(`${category.slug}_primary`, "github_pages", category.hicvPath)}">在线浏览同类模板</a><a class="button" href="${categoryDirectoryUrl}">打开 GitHub 目录</a></div></div><div class="stats"><div class="stat"><strong>${categoryFiles.length}</strong><span>套可编辑模板</span></div><div class="stat"><strong>DOCX</strong><span>Word / WPS 可用</span></div><div class="stat"><strong>真实预览</strong><span>从原文件直接渲染</span></div></div></div></header>
-  <main>${previewSection}<section class="band"><div class="inner"><div class="section-head"><div><h2>${category.shortTitle}下载目录</h2><p class="section-intro">当前展示前 ${visibleFiles.length} 个文件，可直接筛选；完整的 ${categoryFiles.length} 套模板请进入 GitHub 目录。</p></div><a class="text-link" href="${categoryDirectoryUrl}">查看全部 ${categoryFiles.length} 套 →</a></div><div class="resource-toolbar"><label class="sr-only" for="resource-search">搜索模板名称</label><input id="resource-search" class="resource-search" data-resource-search type="search" placeholder="搜索当前目录，例如：单页、英文、会计"><p class="resource-summary">显示 <strong data-resource-count>${visibleFiles.length}</strong> 个文件</p></div><div class="resource-list">${rows}</div><div class="actions"><a class="button" href="${categoryDirectoryUrl}">打开完整文件目录</a><a class="button primary" href="${hicvUrl(`${category.slug}_bottom`, "github_pages", category.hicvPath)}">在线套用模板</a></div></div></section><section class="band alt"><div class="inner"><h2>选择建议</h2><p class="note">优先选择结构清楚、重要经历靠前的模板。完成基本内容后，再根据目标岗位调整经历顺序、关键词和成果表达；需要在线编辑或检查内容时，可进入 HICV 继续完成。</p></div></section><section class="conversion"><div class="inner"><div><h2>不用从空白文档开始</h2><p>在线选择同类模板，继续完善简历内容并导出投递版本。</p></div><div class="actions"><a class="button primary" href="${hicvUrl(`${category.slug}_conversion`, "github_pages", category.hicvPath)}">在线制作简历</a></div></div></section></main>`;
+  const body = `<header class="hero"><div class="inner"><p class="breadcrumbs"><a href="../../index.html">模板库首页</a> / ${category.shortTitle}</p><div class="hero-copy"><p class="eyebrow">HICV 求职模板专题</p><h1>${category.title}</h1><p class="lead">${category.description}</p><p class="updated">更新于 <time datetime="${updatedAt}">${updatedAt}</time></p><div class="actions"><a class="button primary" href="${hicvUrl(`${category.slug}_primary`, "github_pages", category.hicvPath)}">在线浏览同类模板</a><a class="button" href="#downloads">选择 Word 文件</a></div></div><div class="stats"><div class="stat"><strong>${categoryFiles.length}</strong><span>套可编辑模板</span></div><div class="stat"><strong>DOCX</strong><span>Word / WPS 可用</span></div><div class="stat"><strong>免费</strong><span>仓库 Word 文件下载</span></div></div></div></header>
+  <main>${previewSection}<section class="band" id="downloads"><div class="inner"><div class="section-head"><div><h2>${category.shortTitle}下载目录</h2><p class="section-intro">共 ${categoryFiles.length} 套模板，搜索覆盖本专题的全部文件。</p></div><a class="text-link" href="../../catalog/">搜索所有分类 →</a></div>${resourceBrowser(categoryFiles)}<div class="actions"><a class="button" href="${categoryDirectoryUrl}">查看仓库文件</a><a class="button primary" href="${hicvUrl(`${category.slug}_bottom`, "github_pages", category.hicvPath)}">在线套用模板</a></div></div></section><section class="band alt"><div class="inner"><div class="section-head"><h2>下载之后，继续完善简历</h2></div>${guideLinks(guides.filter((guide) => guide.categories.includes(category.slug)), "../../")}</div></section><section class="conversion"><div class="inner"><div><h2>不用从空白文档开始</h2><p>在线选择同类模板，继续完善简历内容并导出投递版本。</p></div><div class="actions"><a class="button primary" href="${hicvUrl(`${category.slug}_conversion`, "github_pages", category.hicvPath)}">在线制作简历</a></div></div></section></main>`;
   const categoryDir = path.join(docsDir, "categories", category.slug);
   await fs.mkdir(categoryDir, { recursive: true });
   await fs.writeFile(path.join(categoryDir, "index.html"), pageShell({
@@ -609,8 +655,38 @@ for (const category of allLandingCategories) {
   }));
 }
 
+const catalogDir = path.join(docsDir, "catalog");
+await fs.mkdir(catalogDir, { recursive: true });
+await fs.writeFile(path.join(catalogDir, "index.html"), pageShell({
+  title: `${files.length} 套 Word 简历模板搜索与免费下载_HICV`,
+  description: "按模板名称、分类和岗位搜索完整 Word 简历库，包含简约、表格、实习、教师、会计、开发、英文与考研复试模板，支持 Word / WPS 编辑。",
+  canonical: `${pagesUrl}/catalog/`,
+  prefix: "../",
+  body: `<header class="hero"><div class="inner"><p class="breadcrumbs"><a href="../index.html">模板库首页</a> / 全部模板</p><div class="hero-copy"><h1>Word 简历模板搜索</h1><p class="lead">${files.length} 套可编辑 DOCX，按名称、分类或岗位找到适合自己的模板。</p><div class="actions"><a class="button primary" href="${hicvUrl("catalog_primary")}">去 HICV 在线制作</a><a class="button" href="${repoUrl}/blob/main/TEMPLATE_INDEX.md">查看 Markdown 索引</a></div></div></div></header><main><section class="band"><div class="inner">${resourceBrowser(files)}</div></section><section class="band alt"><div class="inner"><div class="section-head"><h2>模板选好后，准备投递内容</h2></div>${guideLinks(guides, "../")}</div></section></main>`,
+  schema: { "@context": "https://schema.org", "@type": "CollectionPage", name: "Word 简历模板搜索", url: `${pagesUrl}/catalog/`, dateModified: updatedAt },
+}));
+
+for (const guide of guides) {
+  const canonical = `${pagesUrl}/guides/${guide.slug}/`;
+  const sections = guide.sections.map((section, index) => `<section id="section-${index + 1}"><h2>${escapeHtml(section.title)}</h2>${(section.paragraphs ?? []).map((paragraph) => `<p>${escapeHtml(paragraph)}</p>`).join("")}${section.items ? `<ul>${section.items.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul>` : ""}${section.example ? `<blockquote><p>${escapeHtml(section.example)}</p></blockquote>` : ""}</section>`).join("");
+  const relatedCategories = allLandingCategories.filter((category) => guide.categories.includes(category.slug));
+  const body = `<header class="hero"><div class="inner reading"><p class="breadcrumbs"><a href="../../index.html">模板库首页</a> / 简历指南</p><div class="hero-copy"><p class="eyebrow">HICV 简历指南</p><h1>${escapeHtml(guide.title)}</h1><p class="lead">${escapeHtml(guide.description)}</p><p class="updated">HICV 编辑整理 · 更新于 <time datetime="${updatedAt}">${updatedAt}</time></p><nav class="guide-toc" aria-label="文章目录">${guide.sections.map((section, index) => `<a href="#section-${index + 1}">${escapeHtml(section.title)}</a>`).join("")}</nav></div></div></header><main><article class="band"><div class="inner reading">${sections}</div></article><section class="band alt"><div class="inner reading"><h2>选择一份配套模板</h2><p>Word 文件可下载到本地编辑；在线模板可在 HICV 中继续制作。</p><ul>${relatedCategories.map((category) => `<li><a href="../../categories/${category.slug}/">${category.title}</a></li>`).join("")}</ul><div class="actions"><a class="button primary" href="${hicvUrl(`guide_${guide.slug}_templates`, "github_pages", guide.hicvPath)}">${guide.cta}</a><a class="button" href="${hicvUrl(`guide_${guide.slug}_examples`, "github_pages", "/fanwen")}">参考岗位简历范文</a></div></div></section><section class="band"><div class="inner"><div class="section-head"><h2>继续阅读</h2></div>${guideLinks(guides.filter((item) => item.slug !== guide.slug), "../../")}</div></section></main>`;
+  const guideDir = path.join(docsDir, "guides", guide.slug);
+  await fs.mkdir(guideDir, { recursive: true });
+  await fs.writeFile(path.join(guideDir, "index.html"), pageShell({
+    title: `${guide.title}_HICV`, description: guide.description, canonical, body, prefix: "../../", ogType: "article",
+    schema: {
+      "@context": "https://schema.org",
+      "@graph": [
+        { "@type": "Article", headline: guide.title, description: guide.description, mainEntityOfPage: canonical, datePublished: "2026-10-14", dateModified: updatedAt, inLanguage: "zh-CN", author: { "@type": "Organization", name: "HICV", url: "https://hicv.cn" }, publisher: { "@type": "Organization", name: "HICV", url: "https://hicv.cn" } },
+        { "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "模板库首页", item: `${pagesUrl}/` }, { "@type": "ListItem", position: 2, name: guide.shortTitle, item: canonical }] },
+      ],
+    },
+  }));
+}
+
 await fs.writeFile(path.join(docsDir, "robots.txt"), `User-agent: *\nAllow: /\n\nSitemap: ${pagesUrl}/sitemap.xml\n`);
-const sitemapUrls = [`${pagesUrl}/`, ...allLandingCategories.map((category) => `${pagesUrl}/categories/${category.slug}/`)];
+const sitemapUrls = [`${pagesUrl}/`, `${pagesUrl}/catalog/`, ...allLandingCategories.map((category) => `${pagesUrl}/categories/${category.slug}/`), ...guides.map((guide) => `${pagesUrl}/guides/${guide.slug}/`)];
 await fs.writeFile(path.join(docsDir, "sitemap.xml"), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${sitemapUrls.map((url, index) => `  <url>\n    <loc>${url}</loc>\n    <lastmod>${updatedAt}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>${index === 0 ? "1.0" : "0.8"}</priority>\n  </url>`).join("\n")}\n</urlset>\n`);
 
-console.log(`Generated ${files.length} templates, ${allLandingCategories.length} category pages, and tracked HICV links.`);
+console.log(`Generated ${files.length} templates, ${allLandingCategories.length} category pages, ${guides.length} guides, and the complete searchable catalog.`);

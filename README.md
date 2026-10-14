@@ -4,9 +4,21 @@
 
 模板均为 `.docx` 格式，可使用 Microsoft Word、WPS Office 或兼容 DOCX 的编辑器打开修改。
 
-**[在线浏览模板并制作简历](https://hicv.cn/templates?utm_source=github&utm_medium=referral&utm_campaign=word_resume_templates&utm_content=readme_primary)** · [查看完整模板索引](./TEMPLATE_INDEX.md) · [打开模板文件目录](./templates)
+**[在线浏览模板并制作简历](https://hicv.cn/templates?utm_source=github&utm_medium=referral&utm_campaign=word_resume_templates&utm_content=readme_primary)** · [搜索全部 Word 模板](https://hicv-cn.github.io/hicv-word-resume-templates/catalog/) · [查看完整模板索引](./TEMPLATE_INDEX.md)
 
-## 新功能：百变模板
+## 2026 年 10 月更新
+
+本次保留原有 2,132 套 DOCX，新增完整目录搜索与 3 篇简历指南。专题页也可搜索全部收录文件，不再只覆盖前 60 套。
+
+| 你正在准备什么 | 免费 Word 模板与指南 | HICV 在线资源 |
+| --- | --- | --- |
+| 2027 届秋招 / 校招 | [秋招投递检查清单](https://hicv-cn.github.io/hicv-word-resume-templates/guides/campus-resume-checklist/) · [校招 Word 模板](https://hicv-cn.github.io/hicv-word-resume-templates/categories/campus-recruitment/) | [校招在线模板](https://hicv.cn/templates/category/xiaozhao?utm_source=github&utm_medium=referral&utm_campaign=word_resume_templates&utm_content=readme_october_campus) |
+| 第一份实习，经历较少 | [没有实习经历怎么写](https://hicv-cn.github.io/hicv-word-resume-templates/guides/resume-without-internship/) · [实习 Word 模板](https://hicv-cn.github.io/hicv-word-resume-templates/categories/internship-entry-level/) | [实习生在线模板](https://hicv.cn/templates/category/shixisheng?utm_source=github&utm_medium=referral&utm_campaign=word_resume_templates&utm_content=readme_october_internship) |
+| 已下载，准备排版与投递 | [Word / WPS 排版与 PDF 检查](https://hicv-cn.github.io/hicv-word-resume-templates/guides/word-resume-pdf-checklist/) | [按岗位参考简历范文](https://hicv.cn/fanwen?utm_source=github&utm_medium=referral&utm_campaign=word_resume_templates&utm_content=readme_october_examples) |
+
+指南中的 2027 届指毕业年份，2026 年秋季指准备与投递时间。招聘对象、格式和截止时间请以企业公告为准。
+
+## 百变模板：在线调整简历版式
 
 HICV.cn 模板列表页已上线百变模板功能，可自由组合简历头部布局、模块样式、主题配色和页面背景。用同一份简历内容，就能快速切换简约清爽、正式商务等不同投递风格。
 
@@ -29,7 +41,7 @@ HICV.cn 模板列表页已上线百变模板功能，可自由组合简历头部
   </tr>
 </table>
 
-## 高频模板专题
+## 按类型找模板
 
 - [简约单页 Word 简历模板](https://hicv-cn.github.io/hicv-word-resume-templates/categories/minimalist-single-page/)
 - [表格 Word 简历模板](https://hicv-cn.github.io/hicv-word-resume-templates/categories/table-resume/)
@@ -40,7 +52,7 @@ HICV.cn 模板列表页已上线百变模板功能，可自由组合简历头部
 
 ## 求职场景专题
 
-以下专题页复用仓库现有模板，按搜索场景重新整理，适合秋招、实习和热门岗位快速筛选：
+以下专题页复用仓库现有模板，按求职场景整理，支持在完整专题中搜索：
 
 - [秋招校招 Word 简历模板](https://hicv-cn.github.io/hicv-word-resume-templates/categories/campus-recruitment/)
 - [实习与应届生 Word 简历模板](https://hicv-cn.github.io/hicv-word-resume-templates/categories/internship-entry-level/)
@@ -71,10 +83,12 @@ HICV.cn 模板列表页已上线百变模板功能，可自由组合简历头部
 
 ## 使用方式
 
-1. 进入 [模板文件目录](./templates) 或 [完整模板索引](./TEMPLATE_INDEX.md)。
-2. 按风格、行业和页数选择 `.docx` 文件。
+1. 进入 [模板搜索页](https://hicv-cn.github.io/hicv-word-resume-templates/catalog/) 或 [完整模板索引](./TEMPLATE_INDEX.md)。
+2. 按名称、分类或岗位查找 `.docx` 文件。搜索页支持多个关键词，例如“会计 单页”。
 3. 下载后用 Word 或 WPS 修改个人信息、教育经历、实习经历和项目经历。
-4. 投递前导出 PDF，避免不同设备打开时出现排版变化。
+4. 按招聘方要求提交 DOCX 或 PDF；导出后逐页检查分页、字体、链接及残留示例内容。
+
+搜索页的“下载 DOCX”直接链接原文件。若所在网络无法访问下载地址，可以在 [GitHub 文件目录](./templates) 打开同名文件后下载。在线模板与仓库 DOCX 是两种使用方式，不代表每份 Word 文件都有一一对应的在线版本。
 
 需要在线套用模板、检查经历表达或根据目标岗位优化内容，可进入 [HICV 在线简历模板](https://hicv.cn/templates?utm_source=github&utm_medium=referral&utm_campaign=word_resume_templates&utm_content=readme_bottom)。
 
