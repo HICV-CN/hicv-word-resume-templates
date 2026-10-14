@@ -333,6 +333,9 @@ h2 { margin: 0 0 12px; font-size: 30px; line-height: 1.25; letter-spacing: 0; }
 h3 { margin: 0; font-size: 18px; line-height: 1.35; letter-spacing: 0; }
 p { color: var(--muted); }
 .lead { max-width: 790px; margin: 0; font-size: 18px; }
+.hero-promise { max-width: 820px; margin: 0 0 16px; color: var(--ink); font-size: 24px; font-weight: 700; line-height: 1.5; }
+.trust-proof { max-width: 900px; margin: 0 0 28px; padding-left: 18px; border-left: 3px solid var(--accent); }
+.trust-proof p { margin: 8px 0; }
 .actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 26px; }
 .button { display: inline-flex; min-height: 44px; align-items: center; justify-content: center; padding: 0 17px; border: 1px solid var(--line); border-radius: 7px; background: white; color: var(--ink); font-weight: 700; }
 .button:hover { border-color: #98a2b3; text-decoration: none; }
@@ -531,11 +534,11 @@ function guideLinks(selectedGuides = guides, prefix = "") {
 }
 
 function onlineNudge(content, pathname = "/templates", prefix = "../../") {
-  return `<aside class="online-nudge"><h3>还在选版式？建议先试试 HICV 在线模板</h3><p>想更换简历样式、继续完善内容并导出 PDF，可以先在线选模板。若招聘方要求 DOCX，或你需要离线精细调整，下方 Word 文件仍可直接下载。</p><div class="actions"><a class="button primary" href="${hicvUrl(content, "github_pages", pathname)}">先去 HICV 选模板</a><a class="text-link" href="${prefix}index.html#choose">比较在线模板与 Word 的利弊 →</a></div></aside>`;
+  return `<aside class="online-nudge"><h3>认真准备这次投递，从合适的模板开始</h3><p>HICV 根据用户反馈持续打磨模板与编辑体验。想让关键经历呈现得更清楚，并继续完善内容、导出 PDF，可以先试在线模板。若招聘方要求 DOCX，或你需要离线精细调整，下方 Word 文件仍可直接下载。</p><div class="actions"><a class="button primary" href="${hicvUrl(content, "github_pages", pathname)}">先去 HICV 选模板</a><a class="text-link" href="${prefix}index.html#choose">比较在线模板与 Word 的利弊 →</a></div></aside>`;
 }
 
 function editingChoice() {
-  return `<section class="band" id="choose"><div class="inner"><div class="section-head"><div><h2>想快点完成简历？先试试 HICV 在线模板</h2><p class="section-intro">先根据投递格式和编辑习惯，选择更适合自己的方式。</p></div></div><div class="choice-columns"><div class="choice-option"><h3>HICV 在线模板</h3><p>适合希望快速选版式、在线完善内容并导出投递文件的用户。</p><ul><li><strong>换风格更方便：</strong>百变模板可组合头部、模块样式、配色与背景。</li><li><strong>内容与版式一起处理：</strong>在线编辑，可结合 AI 帮写整理表达，再自行核对事实。</li><li><strong>适合 PDF 投递：</strong>选择在线模板后导出，导出结果仍需逐页检查。</li><li><strong>需要考虑：</strong>依赖网络，保存与使用相关功能可能需要登录；高级模板和部分 AI 功能有会员或额度限制。</li></ul><div class="actions"><a class="button primary" href="${hicvUrl("home_comparison_online")}">先试 HICV 在线模板</a><a class="text-link" href="${hicvUrl("home_comparison_pricing", "github_pages", "/pricing")}">查看免费与会员权益 →</a></div></div><div class="choice-option"><h3>下载 Word / WPS 模板</h3><p>适合要求提交 DOCX、需要离线编辑或熟悉 Word 排版的用户。</p><ul><li><strong>离线可改：</strong>文件下载后，可在本地 Word 或 WPS 中编辑和保存。</li><li><strong>细节自由：</strong>可以自行调整表格、段落和页面布局，适应指定材料格式。</li><li><strong>仓库文件免费：</strong>使用与转发时请保留来源并遵守授权说明。</li><li><strong>需要考虑：</strong>替换长文本、跨设备打开或换模板时，可能需要手动处理字体、分页和对齐；内容整理与版本维护也需自行完成。</li></ul><div class="actions"><a class="button" href="catalog/">我需要 Word 文件</a></div></div></div><p class="choice-note">本仓库 DOCX 与 HICV 在线模板是两种资源，并非每份文件都有对应的在线版。需要提交 DOCX 时请优先选择 Word 文件；招聘方指定格式时以其要求为准。在线功能与费用以 <a href="${hicvUrl("home_comparison_terms", "github_pages", "/pricing")}">官网权益及账户内提示</a> 为准。</p></div></section>`;
+  return `<section class="band" id="choose"><div class="inner"><div class="section-head"><div><h2>在真实求职反馈中持续打磨的在线模板</h2><p class="section-intro">让经历清楚呈现，让内容便于完善，为每一次投递做好准备。</p></div></div><div class="trust-proof"><h3>持续打磨，有公开记录可查</h3><p>从模板预览到样式调整、PDF 与 PNG 导出，HICV 的公开日志记录了用户遇到的问题和产品改进。选择模板时，也看看它在实际使用中如何不断完善。</p><a href="${hicvUrl("home_choice_feedback", "github_pages", "/updates")}">查看用户反馈与迭代记录 →</a></div><div class="choice-columns"><div class="choice-option"><h3>HICV 在线模板</h3><p>适合希望快速选版式、在线完善内容并导出投递文件的用户。</p><ul><li><strong>换风格更方便：</strong>百变模板可组合头部、模块样式、配色与背景。</li><li><strong>内容与版式一起处理：</strong>在线编辑，可结合 AI 帮写整理表达，再自行核对事实。</li><li><strong>适合 PDF 投递：</strong>选择在线模板后导出，导出结果仍需逐页检查。</li><li><strong>需要考虑：</strong>依赖网络，保存与使用相关功能可能需要登录；高级模板和部分 AI 功能有会员或额度限制。</li></ul><div class="actions"><a class="button primary" href="${hicvUrl("home_comparison_online")}">先试 HICV 在线模板</a><a class="text-link" href="${hicvUrl("home_comparison_pricing", "github_pages", "/pricing")}">查看免费与会员权益 →</a></div></div><div class="choice-option"><h3>下载 Word / WPS 模板</h3><p>适合要求提交 DOCX、需要离线编辑或熟悉 Word 排版的用户。</p><ul><li><strong>离线可改：</strong>文件下载后，可在本地 Word 或 WPS 中编辑和保存。</li><li><strong>细节自由：</strong>可以自行调整表格、段落和页面布局，适应指定材料格式。</li><li><strong>仓库文件免费：</strong>使用与转发时请保留来源并遵守授权说明。</li><li><strong>需要考虑：</strong>替换长文本、跨设备打开或换模板时，可能需要手动处理字体、分页和对齐；内容整理与版本维护也需自行完成。</li></ul><div class="actions"><a class="button" href="catalog/">我需要 Word 文件</a></div></div></div><p class="choice-note">本仓库 DOCX 与 HICV 在线模板是两种资源，并非每份文件都有对应的在线版。需要提交 DOCX 时请优先选择 Word 文件；招聘方指定格式时以其要求为准。在线功能与费用以 <a href="${hicvUrl("home_comparison_terms", "github_pages", "/pricing")}">官网权益及账户内提示</a> 为准。</p></div></section>`;
 }
 
 function resourceBrowser(resourceFiles, category) {
@@ -663,11 +666,13 @@ const homeRows = featuredFiles.slice(0, 12).map((file, index) => `<div class="re
 
 const homeBody = `<header class="hero"><div class="inner">
   <div class="hero-copy">
-    <p class="eyebrow">免费 Word 模板库 · 2026 年 10 月更新</p>
-    <h1>Word 简历模板，先看版式再下载</h1>
-    <p class="lead">2,132 套真实可编辑 DOCX，覆盖简约单页、表格简历、秋招校招、实习应届、热门行业和英文简历。预览满意后直接下载，也可以进入 HICV 在线制作。</p>
+    <p class="eyebrow">HICV · 根据真实求职反馈持续打磨</p>
+    <h1>HICV 简历模板与 Word 模板库</h1>
+    <p class="hero-promise">每一次来之不易的求职机会，都值得一份认真准备的简历。</p>
+    <p class="lead">让关键经历被清楚看见，让投递前的准备更充分。HICV 根据用户反馈持续改进模板预览、样式调整与导出体验，帮助你把精力放在经历表达与岗位匹配上。先试在线模板，也可下载本库 2,132 套 Word 模板。</p>
+    <p><a href="${hicvUrl("home_trust_updates", "github_pages", "/updates")}">查看用户反馈与公开迭代记录 →</a></p>
     <div class="actions">
-      <a class="button primary" href="${hicvUrl("home_primary_cta")}">在线浏览并制作简历</a>
+      <a class="button primary" href="${hicvUrl("home_primary_cta")}">用 HICV 认真准备这次投递</a>
       <a class="button" href="catalog/">搜索全部 ${files.length} 套 Word 模板</a>
     </div>
     <div class="quick-links"><a href="#choose">在线模板与 Word 怎么选</a><a href="#styles">更多页数与风格</a><a href="guides/campus-resume-checklist/">2027 届秋招投递检查</a><a href="guides/resume-without-internship/">没有实习经历怎么写</a><a href="guides/word-resume-pdf-checklist/">Word 转 PDF 检查</a></div>
@@ -695,7 +700,7 @@ const homeBody = `<header class="hero"><div class="inner">
   <section class="band" id="styles"><div class="inner"><div class="section-head"><div><h2>更多页数、风格与配套材料</h2><p class="section-intro">从双页简历到创意风格，也有封面与求职信；按实际投递需要选择。</p></div></div><div class="category-grid">${styleCards}</div></div></section>
   <section class="band" id="guides"><div class="inner"><div class="section-head"><div><h2>简历写作与投递指南</h2><p class="section-intro">从真实经历到可投递的文件，把下载模板后的几步也准备好。</p></div></div>${guideLinks()}</div></section>
   <section class="band alt"><div class="inner"><div class="section-head"><div><h2>Word 模板快速下载</h2><p class="section-intro">从简约、表格与职业分类中选取的 12 份模板。</p></div><a class="text-link" href="catalog/">搜索完整模板库 →</a></div><div class="resource-list">${homeRows}</div></div></section>
-  <section class="conversion"><div class="inner"><div><h2>选好版式，继续把内容写到位</h2><p>在 HICV 在线套用模板，按目标岗位调整经历顺序、关键词和成果表达。</p></div><div class="actions"><a class="button primary" href="${hicvUrl("home_bottom_cta")}">在线制作简历</a><a class="button" href="${repoUrl}/releases">下载精选包</a></div></div></section>
+  <section class="conversion"><div class="inner"><div><h2>下一次投递，值得更充分的准备</h2><p>用清晰的版式呈现真实能力，认真核对每一段经历，把握来之不易的求职机会。</p></div><div class="actions"><a class="button primary" href="${hicvUrl("home_bottom_cta")}">用 HICV 准备投递简历</a><a class="button" href="${repoUrl}/releases">下载精选包</a></div></div></section>
 </main>`;
 
 const homeHtml = pageShell({

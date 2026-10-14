@@ -1,5 +1,9 @@
 # HICV 简历模板库：2,132 套 Word 简历模板免费下载
 
+**每一次来之不易的求职机会，都值得一份认真准备的简历。**
+
+HICV 根据用户反馈持续打磨模板预览、样式调整与导出体验，帮助你更清楚地呈现关键经历，把精力放在岗位匹配和投递准备上。你可以查看 [用户反馈与公开迭代记录](https://hicv.cn/updates?utm_source=github&utm_medium=referral&utm_campaign=word_resume_templates&utm_content=readme_trust_updates)，了解具体改进。
+
 这里整理了 2,132 套可编辑 Word 简历模板，覆盖中文个人简历、应届生简历、表格简历、行业岗位简历、研究生复试简历、自荐信和英文简历等常见求职场景。
 
 模板均为 `.docx` 格式，可使用 Microsoft Word、WPS Office 或兼容 DOCX 的编辑器打开修改。
