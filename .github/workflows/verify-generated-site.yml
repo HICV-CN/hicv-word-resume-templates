@@ -19,5 +19,7 @@ jobs:
           node-version: 22
       - name: Regenerate index and GitHub Pages
         run: node scripts/generate-site.mjs
+      - name: Verify page links and complete template catalog
+        run: python3 scripts/verify-site.py
       - name: Check committed generated files
         run: git diff --exit-code -- TEMPLATE_INDEX.md docs
