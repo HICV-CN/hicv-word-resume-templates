@@ -24,6 +24,20 @@ HICV.cn 模板列表页已上线百变模板功能，可自由组合简历头部
 
 **[试试 HICV 百变模板](https://hicv.cn/templates?utm_source=github&utm_medium=referral&utm_campaign=word_resume_templates&utm_content=readme_baibian_template)** · [查看演示视频](https://prod-oss.hicv.cn/template/baibian-video-900-30fps.mp4)
 
+## 在线模板与 Word 怎么选
+
+想快速换版式、在线编辑并导出 PDF，建议先试 [HICV 在线模板](https://hicv.cn/templates?utm_source=github&utm_medium=referral&utm_campaign=word_resume_templates&utm_content=readme_choice_online)；需要离线编辑或按招聘要求提交 DOCX，再选择下方 Word 文件。
+
+| 对比 | HICV 在线模板 | Word / WPS 文件 |
+| --- | --- | --- |
+| 版式调整 | 百变模板可组合头部、模块、配色与背景 | 自由调整表格、段落与页面，需要一定排版经验 |
+| 内容完善 | 在线编辑，可结合 AI 帮写；仍需核对事实 | 自行整理与修改内容 |
+| 投递文件 | 适合制作后导出 PDF，仍需逐页检查 | 适合要求 DOCX 的投递，也可自行导出 PDF |
+| 使用条件 | 依赖网络，相关功能可能需要登录 | 下载后可在本地兼容编辑器中离线修改 |
+| 费用与限制 | 免费与高级模板权益不同，部分 AI 功能有额度或会员限制 | 仓库 DOCX 免费，使用与转发请保留来源信息 |
+
+在线功能及费用以 [官网权益说明](https://hicv.cn/pricing?utm_source=github&utm_medium=referral&utm_campaign=word_resume_templates&utm_content=readme_choice_pricing) 和账户内提示为准。在线模板与仓库 DOCX 并非一一对应。
+
 ## 真实模板预览
 
 以下图片由仓库中的 DOCX 文件直接渲染。点击图片可查看对应文件。
@@ -62,6 +76,15 @@ HICV.cn 模板列表页已上线百变模板功能，可自由组合简历头部
 - [技术开发 Word 简历模板](https://hicv-cn.github.io/hicv-word-resume-templates/categories/technology-resume/)
 
 ## 模板分类
+
+### 新增类型入口
+
+- 页数：[双页简历](https://hicv-cn.github.io/hicv-word-resume-templates/categories/two-page-resume/) · [三页与多页](https://hicv-cn.github.io/hicv-word-resume-templates/categories/multi-page-resume/)
+- 风格：[活泼明朗](https://hicv-cn.github.io/hicv-word-resume-templates/categories/lively-resume/) · [简约优雅](https://hicv-cn.github.io/hicv-word-resume-templates/categories/elegant-resume/) · [文艺清新](https://hicv-cn.github.io/hicv-word-resume-templates/categories/fresh-resume/) · [稳重大气](https://hicv-cn.github.io/hicv-word-resume-templates/categories/formal-resume/) · [小红书风格](https://hicv-cn.github.io/hicv-word-resume-templates/categories/xiaohongshu-style/) · [创意彩色](https://hicv-cn.github.io/hicv-word-resume-templates/categories/creative-resume/)
+- 岗位：[医疗护理](https://hicv-cn.github.io/hicv-word-resume-templates/categories/medical-nursing/) · [运营电商](https://hicv-cn.github.io/hicv-word-resume-templates/categories/operations-ecommerce/) · [行政人事](https://hicv-cn.github.io/hicv-word-resume-templates/categories/hr-administration/) · [销售市场](https://hicv-cn.github.io/hicv-word-resume-templates/categories/sales-marketing/)
+- 配套：[简历封面](https://hicv-cn.github.io/hicv-word-resume-templates/categories/resume-cover/) · [自荐信与求职信](https://hicv-cn.github.io/hicv-word-resume-templates/categories/cover-letter/)
+
+### 文件分类数量
 
 | 分类 | 适用场景 | 数量 |
 | --- | --- | ---: |

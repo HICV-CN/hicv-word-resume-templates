@@ -55,12 +55,16 @@ class Page(HTMLParser):
 
 pages = [Page(file) for file in sorted(DOCS.rglob("*.html"))]
 by_file = {page.file.resolve(): page for page in pages}
+home_links = {url.removesuffix("index.html") for url in by_file[(DOCS / "index.html").resolve()].links}
 checked_downloads = set()
 for page in pages:
     assert page.h1_count == 1, f"Expected one H1: {page.file}"
     assert page.canonical == page.url, f"Invalid canonical: {page.file}"
     assert page.schemas, f"Missing structured data: {page.file}"
     assert len(page.rows) == len(set(page.rows)), f"Duplicate template: {page.file}"
+    if page.file.is_relative_to(DOCS / "categories"):
+        assert page.rows, f"Empty category: {page.file}"
+        assert page.canonical in home_links, f"Category missing from homepage: {page.file}"
     for link in page.links:
         url = urlsplit(link)
         if link.startswith(BASE):
