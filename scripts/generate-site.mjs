@@ -8,7 +8,7 @@ const templatesDir = path.join(root, "templates");
 const docsDir = path.join(root, "docs");
 const repoUrl = "https://github.com/HICV-CN/hicv-word-resume-templates";
 const pagesUrl = "https://hicv-cn.github.io/hicv-word-resume-templates";
-const updatedAt = "2026-10-14";
+const updatedAt = "2026-10-28";
 const baibianVideoUrl = "https://prod-oss.hicv.cn/template/baibian-video-900-30fps.mp4";
 
 const categoryDescriptions = new Map([
@@ -675,11 +675,12 @@ const homeBody = `<header class="hero"><div class="inner">
       <a class="button primary" href="${hicvUrl("home_primary_cta")}">用 HICV 认真准备这次投递</a>
       <a class="button" href="catalog/">搜索全部 ${files.length} 套 Word 模板</a>
     </div>
-    <div class="quick-links"><a href="#choose">在线模板与 Word 怎么选</a><a href="#styles">更多页数与风格</a><a href="guides/campus-resume-checklist/">2027 届秋招投递检查</a><a href="guides/resume-without-internship/">没有实习经历怎么写</a><a href="guides/word-resume-pdf-checklist/">Word 转 PDF 检查</a></div>
+    <div class="quick-links"><a href="#latest">10 月 28 日新指南</a><a href="#choose">在线模板与 Word 怎么选</a><a href="#styles">更多页数与风格</a><a href="guides/campus-resume-checklist/">2027 届秋招投递检查</a><a href="guides/resume-without-internship/">没有实习经历怎么写</a><a href="guides/word-resume-pdf-checklist/">Word 转 PDF 检查</a></div>
   </div>
   <div class="stats"><div class="stat"><strong>${files.length.toLocaleString("zh-CN")}</strong><span>套可编辑 DOCX</span></div><div class="stat"><strong>${grouped.size}</strong><span>个资源分类</span></div><div class="stat"><strong>Word / WPS</strong><span>下载后直接编辑</span></div></div>
 </div></header>
 <main>
+  <section class="band alt" id="latest"><div class="inner"><div class="section-head"><div><p class="eyebrow"><time datetime="2026-10-28">2026.10.28</time> · 本期更新</p><h2>下一次投递，从解决一个具体问题开始</h2><p class="section-intro">准备寒假实习、整理工作经历，或复盘一次没有回音的投递。先把内容准备好，再选择适合自己的版式。</p></div></div>${guideLinks(guides.filter((guide) => guide.featured))}<div class="actions"><a class="button primary" href="${hicvUrl("home_oct28_winter", "github_pages", "/templates/category/hanjiashixi")}">制作寒假实习简历</a><a class="button" href="${hicvUrl("home_oct28_experienced", "github_pages", "/templates/category/shezhao")}">选择社招在线模板</a><a class="text-link" href="catalog/">需要 DOCX？继续找 Word 模板 →</a></div></div></section>
   <section class="feature-demo" id="baibian"><div class="inner">
     <div class="feature-copy">
       <p class="eyebrow">HICV 百变模板</p>
@@ -705,7 +706,7 @@ const homeBody = `<header class="hero"><div class="inner">
 
 const homeHtml = pageShell({
   title: "Word 简历模板免费下载_2027届秋招与应届生简历_HICV",
-  description: `免费搜索 ${files.length} 套 Word 简历模板，覆盖校招、实习、行业岗位与英文简历。2026 年 10 月更新：2027 届秋招检查清单、无实习经历写法、Word 排版与 PDF 导出指南，也可进入 HICV 在线制作。`,
+  description: `免费搜索 ${files.length} 套 Word 简历模板，覆盖校招、实习、行业岗位与英文简历。10 月 28 日新增寒假实习、工作 1—3 年社招简历与投递复盘指南，配套 HICV 在线模板和 Word 下载入口。`,
   canonical: `${pagesUrl}/`,
   body: homeBody,
   schema: {
@@ -784,7 +785,7 @@ for (const guide of guides) {
   const canonical = `${pagesUrl}/guides/${guide.slug}/`;
   const sections = guide.sections.map((section, index) => `<section id="section-${index + 1}"><h2>${escapeHtml(section.title)}</h2>${(section.paragraphs ?? []).map((paragraph) => `<p>${escapeHtml(paragraph)}</p>`).join("")}${section.items ? `<ul>${section.items.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul>` : ""}${section.example ? `<blockquote><p>${escapeHtml(section.example)}</p></blockquote>` : ""}</section>`).join("");
   const relatedCategories = allLandingCategories.filter((category) => guide.categories.includes(category.slug));
-  const body = `<header class="hero"><div class="inner reading"><p class="breadcrumbs"><a href="../../index.html">模板库首页</a> / 简历指南</p><div class="hero-copy"><p class="eyebrow">HICV 简历指南</p><h1>${escapeHtml(guide.title)}</h1><p class="lead">${escapeHtml(guide.description)}</p><p class="updated">HICV 编辑整理 · 更新于 <time datetime="${updatedAt}">${updatedAt}</time></p><nav class="guide-toc" aria-label="文章目录">${guide.sections.map((section, index) => `<a href="#section-${index + 1}">${escapeHtml(section.title)}</a>`).join("")}</nav></div></div></header><main><article class="band"><div class="inner reading">${sections}</div></article><section class="band alt"><div class="inner reading"><h2>选择一份配套模板</h2><p>Word 文件可下载到本地编辑；在线模板可在 HICV 中继续制作。</p><ul>${relatedCategories.map((category) => `<li><a href="../../categories/${category.slug}/">${category.title}</a></li>`).join("")}</ul><div class="actions"><a class="button primary" href="${hicvUrl(`guide_${guide.slug}_templates`, "github_pages", guide.hicvPath)}">${guide.cta}</a><a class="button" href="${hicvUrl(`guide_${guide.slug}_examples`, "github_pages", "/fanwen")}">参考岗位简历范文</a></div></div></section><section class="band"><div class="inner"><div class="section-head"><h2>继续阅读</h2></div>${guideLinks(guides.filter((item) => item.slug !== guide.slug), "../../")}</div></section></main>`;
+  const body = `<header class="hero"><div class="inner reading"><p class="breadcrumbs"><a href="../../index.html">模板库首页</a> / 简历指南</p><div class="hero-copy"><p class="eyebrow">HICV 简历指南</p><h1>${escapeHtml(guide.title)}</h1><p class="lead">${escapeHtml(guide.description)}</p><p class="updated">HICV 编辑整理 · 更新于 <time datetime="${updatedAt}">${updatedAt}</time></p><nav class="guide-toc" aria-label="文章目录">${guide.sections.map((section, index) => `<a href="#section-${index + 1}">${escapeHtml(section.title)}</a>`).join("")}</nav></div></div></header><main><article class="band"><div class="inner reading">${sections}</div></article><section class="band alt"><div class="inner reading"><h2>选择一份配套模板</h2><p>${escapeHtml(guide.onlineAdvice ?? "Word 文件可下载到本地编辑；在线模板可在 HICV 中继续制作。")}</p><p>在线模板与仓库 DOCX 并非一一对应。在线保存与相关功能可能需要登录，高级模板和部分 AI 功能有会员或额度限制，具体以 <a href="${hicvUrl(`guide_${guide.slug}_pricing`, "github_pages", "/pricing")}">官网权益说明</a> 为准。</p><ul>${relatedCategories.map((category) => `<li><a href="../../categories/${category.slug}/">${category.title}</a></li>`).join("")}</ul><div class="actions"><a class="button primary" href="${hicvUrl(`guide_${guide.slug}_templates`, "github_pages", guide.hicvPath)}">${guide.cta}</a><a class="button" href="${hicvUrl(`guide_${guide.slug}_examples`, "github_pages", "/fanwen")}">参考岗位简历范文</a></div></div></section><section class="band"><div class="inner"><div class="section-head"><h2>继续阅读</h2></div>${guideLinks(guides.filter((item) => item.slug !== guide.slug), "../../")}</div></section></main>`;
   const guideDir = path.join(docsDir, "guides", guide.slug);
   await fs.mkdir(guideDir, { recursive: true });
   await fs.writeFile(path.join(guideDir, "index.html"), pageShell({
@@ -792,7 +793,7 @@ for (const guide of guides) {
     schema: {
       "@context": "https://schema.org",
       "@graph": [
-        { "@type": "Article", headline: guide.title, description: guide.description, mainEntityOfPage: canonical, datePublished: "2026-10-14", dateModified: updatedAt, inLanguage: "zh-CN", author: { "@type": "Organization", name: "HICV", url: "https://hicv.cn" }, publisher: { "@type": "Organization", name: "HICV", url: "https://hicv.cn" } },
+        { "@type": "Article", headline: guide.title, description: guide.description, mainEntityOfPage: canonical, datePublished: guide.publishedAt ?? "2026-10-14", dateModified: updatedAt, inLanguage: "zh-CN", author: { "@type": "Organization", name: "HICV", url: "https://hicv.cn" }, publisher: { "@type": "Organization", name: "HICV", url: "https://hicv.cn" } },
         { "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "模板库首页", item: `${pagesUrl}/` }, { "@type": "ListItem", position: 2, name: guide.shortTitle, item: canonical }] },
       ],
     },

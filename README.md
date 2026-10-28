@@ -10,12 +10,15 @@ HICV 根据用户反馈持续打磨模板预览、样式调整与导出体验，
 
 **[在线浏览模板并制作简历](https://hicv.cn/templates?utm_source=github&utm_medium=referral&utm_campaign=word_resume_templates&utm_content=readme_primary)** · [搜索全部 Word 模板](https://hicv-cn.github.io/hicv-word-resume-templates/catalog/) · [查看完整模板索引](./TEMPLATE_INDEX.md)
 
-## 2026 年 10 月更新
+## 2026 年 10 月 28 日更新
 
-本次保留原有 2,132 套 DOCX，新增完整目录搜索与 3 篇简历指南。专题页也可搜索全部收录文件，不再只覆盖前 60 套。
+本次保留原有 2,132 套 DOCX、26 个模板专题和完整目录搜索，新增寒假实习、工作 1—3 年社招简历、投递复盘 3 篇指南，累计 6 篇。先解决内容准备中的具体问题，再选在线模板或 Word 文件；本次没有新增 DOCX。
 
 | 你正在准备什么 | 免费 Word 模板与指南 | HICV 在线资源 |
 | --- | --- | --- |
+| 准备寒假实习 | [到岗安排、项目经历与投递准备](https://hicv-cn.github.io/hicv-word-resume-templates/guides/winter-internship-resume/) | [寒假实习在线模板](https://hicv.cn/templates/category/hanjiashixi?utm_source=github&utm_medium=referral&utm_campaign=word_resume_templates&utm_content=readme_oct28_winter) |
+| 工作 1—3 年，准备社招 | [从职责清单到个人贡献](https://hicv-cn.github.io/hicv-word-resume-templates/guides/early-career-resume/) · [双页 Word 模板](https://hicv-cn.github.io/hicv-word-resume-templates/categories/two-page-resume/) | [社招在线模板](https://hicv.cn/templates/category/shezhao?utm_source=github&utm_medium=referral&utm_campaign=word_resume_templates&utm_content=readme_oct28_experienced) |
+| 投递后没有回音 | [岗位匹配与投递复盘清单](https://hicv-cn.github.io/hicv-word-resume-templates/guides/resume-no-response-checklist/) | [整理下一份投递简历](https://hicv.cn/templates?utm_source=github&utm_medium=referral&utm_campaign=word_resume_templates&utm_content=readme_oct28_review) |
 | 2027 届秋招 / 校招 | [秋招投递检查清单](https://hicv-cn.github.io/hicv-word-resume-templates/guides/campus-resume-checklist/) · [校招 Word 模板](https://hicv-cn.github.io/hicv-word-resume-templates/categories/campus-recruitment/) | [校招在线模板](https://hicv.cn/templates/category/xiaozhao?utm_source=github&utm_medium=referral&utm_campaign=word_resume_templates&utm_content=readme_october_campus) |
 | 第一份实习，经历较少 | [没有实习经历怎么写](https://hicv-cn.github.io/hicv-word-resume-templates/guides/resume-without-internship/) · [实习 Word 模板](https://hicv-cn.github.io/hicv-word-resume-templates/categories/internship-entry-level/) | [实习生在线模板](https://hicv.cn/templates/category/shixisheng?utm_source=github&utm_medium=referral&utm_campaign=word_resume_templates&utm_content=readme_october_internship) |
 | 已下载，准备排版与投递 | [Word / WPS 排版与 PDF 检查](https://hicv-cn.github.io/hicv-word-resume-templates/guides/word-resume-pdf-checklist/) | [按岗位参考简历范文](https://hicv.cn/fanwen?utm_source=github&utm_medium=referral&utm_campaign=word_resume_templates&utm_content=readme_october_examples) |
