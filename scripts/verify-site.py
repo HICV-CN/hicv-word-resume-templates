@@ -1,6 +1,7 @@
 """Check generated page links, structured data, and complete DOCX coverage."""
 
 import json
+from datetime import date
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import unquote, urljoin, urlsplit
@@ -65,6 +66,14 @@ for page in pages:
     if page.file.is_relative_to(DOCS / "categories"):
         assert page.rows, f"Empty category: {page.file}"
         assert page.canonical in home_links, f"Category missing from homepage: {page.file}"
+    if page.file.is_relative_to(DOCS / "guides"):
+        assert page.canonical in home_links, f"Guide missing from homepage: {page.file}"
+        articles = [node for schema in page.schemas for node in schema.get("@graph", [])
+                    if node.get("@type") == "Article"]
+        assert len(articles) == 1, f"Expected one Article: {page.file}"
+        article = articles[0]
+        assert date.fromisoformat(article["datePublished"]) <= date.fromisoformat(article["dateModified"])
+        assert article["mainEntityOfPage"] == page.canonical
     for link in page.links:
         url = urlsplit(link)
         if link.startswith(BASE):
