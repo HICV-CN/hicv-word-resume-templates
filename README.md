@@ -10,12 +10,16 @@ HICV 根据用户反馈持续打磨模板预览、样式调整与导出体验，
 
 **[在线浏览模板并制作简历](https://hicv.cn/templates?utm_source=github&utm_medium=referral&utm_campaign=word_resume_templates&utm_content=readme_primary)** · [搜索全部 Word 模板](https://hicv-cn.github.io/hicv-word-resume-templates/catalog/) · [查看完整模板索引](./TEMPLATE_INDEX.md)
 
-## 2026 年 10 月 28 日更新
+## 2026 年 11 月 19 日更新
 
-本次保留原有 2,132 套 DOCX、26 个模板专题和完整目录搜索，新增寒假实习、工作 1—3 年社招简历、投递复盘 3 篇指南，累计 6 篇。先解决内容准备中的具体问题，再选在线模板或 Word 文件；本次没有新增 DOCX。
+本次新增“按岗位改简历”和“面试前复盘简历”2 篇指南，累计 8 篇；首页增加可勾选的 [投递前 8 项核对](https://hicv-cn.github.io/hicv-word-resume-templates/#submission-checklist)。原有 2,132 套 DOCX、26 个模板专题和完整目录搜索全部保留，本次没有新增 DOCX。
+
+先选出与岗位有关的真实经历，再用 [HICV 在线模板](https://hicv.cn/templates?utm_source=github&utm_medium=referral&utm_campaign=word_resume_templates&utm_content=readme_nov19_prepare) 调整版式、完善表达，最后打开导出文件逐项核对。模板帮助清楚呈现能力，不代替岗位匹配和面试准备。
 
 | 你正在准备什么 | 免费 Word 模板与指南 | HICV 在线资源 |
 | --- | --- | --- |
+| 同时投递不同岗位 | [岗位要求、经历排序与版本管理](https://hicv-cn.github.io/hicv-word-resume-templates/guides/tailor-resume-to-job/) | [按岗位选择在线模板](https://hicv.cn/templates?utm_source=github&utm_medium=referral&utm_campaign=word_resume_templates&utm_content=readme_nov19_tailor) |
+| 收到面试通知 | [项目追问、自我介绍与材料核对](https://hicv-cn.github.io/hicv-word-resume-templates/guides/interview-resume-review/) | [完善面试用简历](https://hicv.cn/templates?utm_source=github&utm_medium=referral&utm_campaign=word_resume_templates&utm_content=readme_nov19_interview) |
 | 准备寒假实习 | [到岗安排、项目经历与投递准备](https://hicv-cn.github.io/hicv-word-resume-templates/guides/winter-internship-resume/) | [寒假实习在线模板](https://hicv.cn/templates/category/hanjiashixi?utm_source=github&utm_medium=referral&utm_campaign=word_resume_templates&utm_content=readme_oct28_winter) |
 | 工作 1—3 年，准备社招 | [从职责清单到个人贡献](https://hicv-cn.github.io/hicv-word-resume-templates/guides/early-career-resume/) · [双页 Word 模板](https://hicv-cn.github.io/hicv-word-resume-templates/categories/two-page-resume/) | [社招在线模板](https://hicv.cn/templates/category/shezhao?utm_source=github&utm_medium=referral&utm_campaign=word_resume_templates&utm_content=readme_oct28_experienced) |
 | 投递后没有回音 | [岗位匹配与投递复盘清单](https://hicv-cn.github.io/hicv-word-resume-templates/guides/resume-no-response-checklist/) | [整理下一份投递简历](https://hicv.cn/templates?utm_source=github&utm_medium=referral&utm_campaign=word_resume_templates&utm_content=readme_oct28_review) |

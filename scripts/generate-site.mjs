@@ -8,7 +8,7 @@ const templatesDir = path.join(root, "templates");
 const docsDir = path.join(root, "docs");
 const repoUrl = "https://github.com/HICV-CN/hicv-word-resume-templates";
 const pagesUrl = "https://hicv-cn.github.io/hicv-word-resume-templates";
-const updatedAt = "2026-10-28";
+const updatedAt = "2026-11-19";
 const baibianVideoUrl = "https://prod-oss.hicv.cn/template/baibian-video-900-30fps.mp4";
 
 const categoryDescriptions = new Map([
@@ -356,6 +356,14 @@ button.button { cursor: pointer; }
 .reading p, .reading li { overflow-wrap: anywhere; }
 .guide-toc { display: flex; flex-wrap: wrap; gap: 10px 22px; margin-top: 24px; }
 .updated { font-size: 13px; }
+.checklist { margin: 24px 0 0; }
+.checklist fieldset { min-width: 0; margin: 0; padding: 0; border: 0; }
+.checklist legend { margin-bottom: 12px; font-weight: 700; }
+.checklist-items { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 0 32px; }
+.checklist label { display: flex; align-items: flex-start; gap: 12px; padding: 16px 0; border-bottom: 1px solid var(--line); cursor: pointer; }
+.checklist input { flex: 0 0 20px; width: 20px; height: 20px; margin: 3px 0 0; accent-color: var(--brand); }
+.checklist label:has(input:checked) { color: #216442; }
+.checklist-status { min-height: 26px; margin: 16px 0 0; color: var(--ink); font-weight: 700; }
 .choice-columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 36px; }
 .choice-option { padding-top: 20px; border-top: 3px solid var(--accent); }
 .choice-option:last-child { border-color: var(--line); }
@@ -622,6 +630,20 @@ function pageShell({ title, description, canonical, body, prefix = "", schema, o
       more.addEventListener("click", () => { limit += 60; render(); });
       render();
     });
+    document.querySelectorAll("[data-checklist]").forEach((form) => {
+      const boxes = [...form.querySelectorAll('input[type="checkbox"]')];
+      const status = form.querySelector("[data-checklist-status]");
+      function update() {
+        const checked = boxes.filter((box) => box.checked).length;
+        status.textContent = "已核对 " + checked + " / " + boxes.length + " 项" + (checked === boxes.length ? "，请按招聘要求提交最终文件。" : "");
+      }
+      status.hidden = false;
+      form.addEventListener("change", update);
+      // Wait until the browser has applied the form's default reset action.
+      form.addEventListener("reset", () => setTimeout(update, 0));
+      window.addEventListener("pageshow", update);
+      update();
+    });
   </script>
 </body>
 </html>`;
@@ -664,6 +686,21 @@ const styleCards = categoryCardsFor(styleCategories, landingCategories.length + 
 const featuredFiles = landingCategories.flatMap((category) => files.filter((file) => rel(file).startsWith(category.prefix)).slice(0, 4));
 const homeRows = featuredFiles.slice(0, 12).map((file, index) => `<div class="resource-row"><span class="resource-number">${String(index + 1).padStart(2, "0")}</span><span class="resource-name">${escapeHtml(titleFromFile(file))}</span><a href="${downloadUrl(rel(file))}">下载 DOCX</a></div>`).join("");
 
+const submissionChecks = [
+  "已确认岗位仍接受申请，招聘对象、地点和到岗条件符合实际情况。",
+  "求职意向与本次岗位一致，相关经历和个人贡献已经写清楚。",
+  "姓名、电话、邮箱、学校、公司和起止时间准确，没有残留示例内容。",
+  "数据、技能与项目表述有事实依据，没有把团队成果全部写成个人成果。",
+  "作品和代码链接在未登录状态下可访问，分享内容不含隐私或机密。",
+  "实际上传的 DOCX 或 PDF 已打开检查，页数、字体和排版正常。",
+  "文件格式、大小和命名符合招聘要求，网申必填项已经完成。",
+  "已保存这次投递的文件，并记录公司、岗位、渠道与提交日期。",
+];
+
+function submissionChecklist() {
+  return `<section class="band" id="submission-checklist"><div class="inner"><div class="section-head"><div><h2>投递前，给这份简历最后一次核对</h2><p class="section-intro">模板选好只是开始。把内容、文件与投递要求逐项对齐，认真对待每一次机会。</p></div><a class="text-link" href="guides/word-resume-pdf-checklist/">查看文件检查指南 →</a></div><form class="checklist" data-checklist><fieldset><legend>本次投递的 8 项检查</legend><div class="checklist-items">${submissionChecks.map((item, index) => `<label for="submission-${index + 1}"><input id="submission-${index + 1}" type="checkbox"><span>${escapeHtml(item)}</span></label>`).join("")}</div></fieldset><p class="checklist-status" data-checklist-status role="status" hidden></p><div class="actions"><a class="button primary" href="${hicvUrl("home_nov19_checklist_edit")}">去 HICV 完善投递稿</a><button class="button" type="reset">重新核对</button><a class="text-link" href="catalog/">需要 Word 文件 →</a></div></form><p class="choice-note">这是投递准备核对，不是简历评分，也不代表获得面试或录用的保证。涉及在线功能与费用，请查看 <a href="${hicvUrl("home_nov19_checklist_pricing", "github_pages", "/pricing")}">官网权益说明</a>。</p></div></section>`;
+}
+
 const homeBody = `<header class="hero"><div class="inner">
   <div class="hero-copy">
     <p class="eyebrow">HICV · 根据真实求职反馈持续打磨</p>
@@ -675,12 +712,12 @@ const homeBody = `<header class="hero"><div class="inner">
       <a class="button primary" href="${hicvUrl("home_primary_cta")}">用 HICV 认真准备这次投递</a>
       <a class="button" href="catalog/">搜索全部 ${files.length} 套 Word 模板</a>
     </div>
-    <div class="quick-links"><a href="#latest">10 月 28 日新指南</a><a href="#choose">在线模板与 Word 怎么选</a><a href="#styles">更多页数与风格</a><a href="guides/campus-resume-checklist/">2027 届秋招投递检查</a><a href="guides/resume-without-internship/">没有实习经历怎么写</a><a href="guides/word-resume-pdf-checklist/">Word 转 PDF 检查</a></div>
+    <div class="quick-links"><a href="#latest">11 月求职准备</a><a href="#submission-checklist">投递前 8 项核对</a><a href="#choose">在线模板与 Word 怎么选</a><a href="#styles">更多页数与风格</a><a href="guides/campus-resume-checklist/">2027 届秋招投递检查</a><a href="guides/resume-without-internship/">没有实习经历怎么写</a><a href="guides/word-resume-pdf-checklist/">Word 转 PDF 检查</a></div>
   </div>
   <div class="stats"><div class="stat"><strong>${files.length.toLocaleString("zh-CN")}</strong><span>套可编辑 DOCX</span></div><div class="stat"><strong>${grouped.size}</strong><span>个资源分类</span></div><div class="stat"><strong>Word / WPS</strong><span>下载后直接编辑</span></div></div>
 </div></header>
 <main>
-  <section class="band alt" id="latest"><div class="inner"><div class="section-head"><div><p class="eyebrow"><time datetime="2026-10-28">2026.10.28</time> · 本期更新</p><h2>下一次投递，从解决一个具体问题开始</h2><p class="section-intro">准备寒假实习、整理工作经历，或复盘一次没有回音的投递。先把内容准备好，再选择适合自己的版式。</p></div></div>${guideLinks(guides.filter((guide) => guide.featured))}<div class="actions"><a class="button primary" href="${hicvUrl("home_oct28_winter", "github_pages", "/templates/category/hanjiashixi")}">制作寒假实习简历</a><a class="button" href="${hicvUrl("home_oct28_experienced", "github_pages", "/templates/category/shezhao")}">选择社招在线模板</a><a class="text-link" href="catalog/">需要 DOCX？继续找 Word 模板 →</a></div></div></section>
+  <section class="band alt" id="latest"><div class="inner"><div class="section-head"><div><p class="eyebrow"><time datetime="${updatedAt}">${updatedAt.replaceAll("-", ".")}</time> · 11 月求职准备</p><h2>投得更有针对性，面试时也能讲清楚</h2><p class="section-intro">本期新增岗位版简历与面试复盘指南，继续保留寒假实习准备。先整理真实经历，再用合适的模板清楚呈现。</p></div></div>${guideLinks(guides.filter((guide) => guide.featured))}<div class="actions"><a class="button primary" href="${hicvUrl("home_nov19_templates")}">在 HICV 选择岗位模板</a><a class="button" href="${hicvUrl("home_nov19_winter", "github_pages", "/templates/category/hanjiashixi")}">准备寒假实习简历</a><a class="text-link" href="#submission-checklist">投递前再核对一遍 →</a></div></div></section>
   <section class="feature-demo" id="baibian"><div class="inner">
     <div class="feature-copy">
       <p class="eyebrow">HICV 百变模板</p>
@@ -695,6 +732,7 @@ const homeBody = `<header class="hero"><div class="inner">
     </div>
   </div></section>
   ${editingChoice()}
+  ${submissionChecklist()}
   <section class="band alt" id="previews"><div class="inner"><div class="section-head"><div><h2>精选模板预览</h2><p class="section-intro">全部由仓库中的真实 DOCX 直接渲染，保持原始版式比例，不使用示意图。</p></div><a class="text-link" href="${repoUrl}/tree/main/templates">浏览全部文件 →</a></div>${previewGrid(previewItems.filter((item) => item.featured !== false))}</div></section>
   <section class="band" id="categories"><div class="inner"><div class="section-head"><div><h2>按模板类型选择</h2><p class="section-intro">按页数、版式和岗位选择，找到适合自己经历长度的模板。</p></div></div><div class="category-grid">${categoryCards}</div></div></section>
   <section class="band alt" id="scenarios"><div class="inner"><div class="section-head"><div><h2>按求职场景选择</h2><p class="section-intro">围绕秋招、实习和热门行业整理现有模板，方便直接进入更具体的搜索入口。</p></div></div><div class="category-grid">${scenarioCards}</div></div></section>
@@ -706,7 +744,7 @@ const homeBody = `<header class="hero"><div class="inner">
 
 const homeHtml = pageShell({
   title: "Word 简历模板免费下载_2027届秋招与应届生简历_HICV",
-  description: `免费搜索 ${files.length} 套 Word 简历模板，覆盖校招、实习、行业岗位与英文简历。10 月 28 日新增寒假实习、工作 1—3 年社招简历与投递复盘指南，配套 HICV 在线模板和 Word 下载入口。`,
+  description: `免费搜索 ${files.length} 套 Word 简历模板，覆盖校招、实习、行业岗位与英文简历。11 月更新：按岗位改简历、面试复盘与投递前 8 项核对，保留寒假实习指南，也可去 HICV 在线制作。`,
   canonical: `${pagesUrl}/`,
   body: homeBody,
   schema: {

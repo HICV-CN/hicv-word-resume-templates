@@ -68,6 +68,14 @@ button.button { cursor: pointer; }
 .reading p, .reading li { overflow-wrap: anywhere; }
 .guide-toc { display: flex; flex-wrap: wrap; gap: 10px 22px; margin-top: 24px; }
 .updated { font-size: 13px; }
+.checklist { margin: 24px 0 0; }
+.checklist fieldset { min-width: 0; margin: 0; padding: 0; border: 0; }
+.checklist legend { margin-bottom: 12px; font-weight: 700; }
+.checklist-items { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 0 32px; }
+.checklist label { display: flex; align-items: flex-start; gap: 12px; padding: 16px 0; border-bottom: 1px solid var(--line); cursor: pointer; }
+.checklist input { flex: 0 0 20px; width: 20px; height: 20px; margin: 3px 0 0; accent-color: var(--brand); }
+.checklist label:has(input:checked) { color: #216442; }
+.checklist-status { min-height: 26px; margin: 16px 0 0; color: var(--ink); font-weight: 700; }
 .choice-columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 36px; }
 .choice-option { padding-top: 20px; border-top: 3px solid var(--accent); }
 .choice-option:last-child { border-color: var(--line); }
