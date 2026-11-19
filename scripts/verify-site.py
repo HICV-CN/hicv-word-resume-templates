@@ -23,6 +23,7 @@ class Page(HTMLParser):
         self.h1_count = 0
         self.canonical = None
         self.rows = []
+        self.checkboxes = []
         self.schemas = []
         self.schema_text = None
         self.feed(file.read_text(encoding="utf-8"))
@@ -34,6 +35,8 @@ class Page(HTMLParser):
             self.ids.add(attrs["id"])
         if tag == "h1":
             self.h1_count += 1
+        if tag == "input" and attrs.get("type") == "checkbox":
+            self.checkboxes.append(attrs.get("id"))
         if tag == "link" and attrs.get("rel") == "canonical":
             self.canonical = attrs["href"]
         for key in ("href", "src"):
@@ -58,6 +61,9 @@ pages = [Page(file) for file in sorted(DOCS.rglob("*.html"))]
 by_file = {page.file.resolve(): page for page in pages}
 home_links = {url.removesuffix("index.html") for url in by_file[(DOCS / "index.html").resolve()].links}
 checked_downloads = set()
+home = by_file[(DOCS / "index.html").resolve()]
+assert home.checkboxes == [f"submission-{index}" for index in range(1, 9)], "Missing submission checks"
+assert "submission-checklist" in home.ids
 for page in pages:
     assert page.h1_count == 1, f"Expected one H1: {page.file}"
     assert page.canonical == page.url, f"Invalid canonical: {page.file}"
